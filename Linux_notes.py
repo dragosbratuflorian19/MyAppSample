@@ -43,3 +43,5 @@ all users currently on the server:							$ w	W
 Making shortcuts:											$ alias	ALIAS
 Locating a file:											$ locate fisier.txt	LOCATE
 write to a file:											$ echo Manchester >> fisier	ECHO
+Unzip a file:												$ tar xvzf < filename > -C / location/
+Add a new environment variable:								$ nano ~ / .bashrc
