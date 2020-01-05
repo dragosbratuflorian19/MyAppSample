@@ -124,6 +124,24 @@
 2. SQL Join 2 table with same column using 'using'
 2. SQL Make an outer join
 2. SQL Join 3 tables
+3. SPARK: Create the main entry point to the spark functionality
+3. SPARK: Load a file as a RDD
+3. SPARK: Load a file as a RDD using inside range function
+3. SPARK: Return a list that contains all of the elements of a RDD.
+3. SPARK: Return the first element of a RDD.
+3. SPARK: Take the first num elements of the RDD.
+3. SPARK: Return the number of elements in this RDD.
+3. SPARK: Return a new RDD containing the distinct elements in this RDD.
+3. SPARK: Return a new RDD containing only the elements that satisfy a predicate.
+3. SPARK: Return a new RDD by first applying a function to all elements of this RDD, and then flattening the results.
+3. SPARK: Return the union of this RDD and another one.
+3. SPARK: Return samples of a RDD ( 2 ways, elements that can be re-chosen)
+3. SPARK: Return all possible pairs of 2 RDDs
+3. SPARK: Save the rdd to another file
+3. SPARK: Keeps a RDD in memory for repeated actions
+3. SPARK: Running the spark job
+3. SPARK: Enter in Spark visualizer
+3. SPARK: Enter in Spark shell
 6. GIT: Initialize a local git repository
 6. GIT: Add files to the index (two ways to add all the files)
 6. GIT: Remove an added file from the index
