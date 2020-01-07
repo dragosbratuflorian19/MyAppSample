@@ -1,0 +1,177 @@
+index,player,team,rating,age,wage,
+1,Burki,Manchester United,88,19,49900000
+2,McTominay,Arsenal,91,24,19100000
+3,Di Lorenzo,Juventus,95,18,49400000
+4,Torreira,Barcelona,90,19,5700000
+5,Ayoze,Chelsea,80,28,27800000
+6,Langlet,PSG,86,32,15800000
+7,Bonucci,Real Madrid,88,24,46300000
+8,Rashford,Dortmund,87,21,36100000
+9,Felipe,Real Madrid,88,33,30600000
+10,Morata,Manchester United,95,21,20100000
+11,Bale,PSG,95,29,24200000
+12,Vardy,Atletico Madrid,98,21,9000000
+13,Reus,Leicester,80,18,35000000
+14,Lautaro,Juventus,92,25,9600000
+15,Aubameyang,Manchester United,97,27,40100000
+16,Marcelo,Barcelona,82,35,42800000
+17,Kross,Atletico Madrid,95,30,6800000
+18,Eriksen,Manchester United,95,27,12700000
+19,Emerson,Bayern Munchen,89,21,49000000
+20,Zielinski,Juventus,93,35,8700000
+21,Sule,Chelsea,94,32,28700000
+22,Di Maria,Real Madrid,93,23,35200000
+23,Arnold,Tottenham,91,30,19400000
+24,Mertens,Tottenham,82,22,32900000
+25,Alison,Real Madrid,90,18,10700000
+26,Oblak,Manchester United,87,24,34000000
+27,Jorginho,Real Madrid,88,28,36900000
+28,Sokratis,Manchester United,91,24,40200000
+29,Rakitic,Bayern Munchen,99,32,40400000
+30,Ospina,Atletico Madrid,94,33,29800000
+31,Costa,Napoli,95,22,34200000
+32,Alli,Inter Milan,82,24,34200000
+33,Fred,Leicester,81,31,26000000
+34,Martial,Manchester United,85,27,36600000
+35,Lukaku,Napoli,94,32,44400000
+36,Salah,Inter Milan,95,29,27500000
+37,Ramos,Leicester,97,29,40500000
+38,Icardi,PSG,92,21,21000000
+39,Laporte,Atletico Madrid,90,27,30700000
+40,Biraghi,Leicester,84,23,17700000
+41,Firmino,Arsenal,94,18,47100000
+42,Guendouzi,PSG,99,26,13300000
+43,Borja Valero,Leicester,83,28,41200000
+44,Stones,Chelsea,81,18,5400000
+45,Modric,Dortmund,88,26,27400000
+46,M. Niles,Chelsea,86,29,25200000
+47,Godin,Atletico Madrid,98,19,46400000
+48,Gimenez,Atletico Madrid,83,34,9100000
+49,Witsel,Real Madrid,95,22,20500000
+50,Fabian Ruiz,Liverpool,82,24,23400000
+51,Sensi,Manchester City,86,27,41200000
+52,Matuidi,Juventus,98,18,18800000
+53,Aurier,Manchester United,96,20,21000000
+54,Semedo,Atletico Madrid,94,21,8500000
+55,Schulz,Real Madrid,81,27,20700000
+56,Draxler,Arsenal,85,32,24300000
+57,Trippier,Barcelona,86,21,10800000
+58,Mendy,Real Madrid,84,35,15700000
+59,Gundogan,PSG,95,27,13600000
+60,Brozovic,Chelsea,84,29,20800000
+61,Sterling,Dortmund,82,24,21400000
+62,Lewandowski,Dortmund,92,22,26200000
+63,Barnes,Liverpool,90,29,24600000
+64,Brandt,Liverpool,95,35,33000000
+65,Alex Sandro,Dortmund,86,21,41800000
+66,Walker,Napoli,85,35,41100000
+67,Muller,Manchester City,80,28,12400000
+68,Handanovic,Real Madrid,99,22,14000000
+69,Lindelof,Liverpool,93,25,27100000
+70,Abraham,Barcelona,95,34,50000000
+71,Gotze,Liverpool,97,26,33400000
+72,Hakimi,Bayern Munchen,95,21,30900000
+73,Carvajal,Dortmund,83,23,23400000
+74,Pique,Napoli,89,20,5400000
+75,D'Ambrosio,Tottenham,87,22,22700000
+76,Dybala,Napoli,81,26,27800000
+77,Schmeichel,Arsenal,91,18,25500000
+78,Alaba,Manchester City,91,25,16900000
+79,Pjanic,Atletico Madrid,80,35,40400000
+80,Bernardo,Barcelona,87,20,27700000
+81,Robertson,Manchester City,97,18,44400000
+82,Kante,Leicester,91,25,36700000
+83,Chambers,Chelsea,88,22,34400000
+84,Kimmich,Inter Milan,86,34,9200000
+85,Lucas,Chelsea,93,26,11400000
+86,Correa,Arsenal,95,20,14800000
+87,Gnabry,Inter Milan,98,26,46600000
+88,Boateng,Chelsea,96,18,46900000
+89,Fabinho,Tottenham,83,35,32100000
+90,Kovacic,Chelsea,93,29,39600000
+91,Benzema,Chelsea,93,33,37400000
+92,De Bruyne,Napoli,80,26,29000000
+93,Shaw,Arsenal,93,24,31800000
+94,Vertonghen,Dortmund,98,32,14700000
+95,De Ligt,Chelsea,97,29,20500000
+96,Madison,Chelsea,90,23,33100000
+97,Hazard,Liverpool,93,25,9000000
+98,Koke,Arsenal,96,22,27500000
+99,Azpilicueta,Bayern Munchen,87,32,6300000
+100,Maguire,Atletico Madrid,89,31,25400000
+101,Van Dijk,Liverpool,83,24,27900000
+102,Tielemans,Manchester City,81,21,20000000
+103,Meunier,Liverpool,96,24,15200000
+104,Marquinhos,Bayern Munchen,87,26,30400000
+105,Casemiro,Inter Milan,85,28,47000000
+106,Kepa,Barcelona,92,34,31700000
+107,Navas,Barcelona,87,21,43200000
+108,Ricardo,Dortmund,96,18,23900000
+109,Wijnaldum,PSG,90,19,38600000
+110,Buffon,Manchester United,84,19,34100000
+111,Ozil,Chelsea,90,30,27300000
+112,Henderson,Bayern Munchen,82,18,49200000
+113,De gea,Tottenham,88,28,32000000
+114,Bernat,Napoli,86,31,25100000
+115,Kolasinac,Dortmund,96,20,17100000
+116,T. Hazard,Juventus,86,23,5900000
+117,Pulisic,Dortmund,94,34,39900000
+118,Ronaldo,Chelsea,89,29,45900000
+119,Saul,Barcelona,96,34,7800000
+120,Aguero,PSG,81,19,28100000
+121,Pogba,Bayern Munchen,86,20,7000000
+122,Mahrez,Tottenham,92,33,28600000
+123,Willian,Dortmund,86,18,24500000
+124,Akanji,Arsenal,89,27,7600000
+125,Neuer,Leicester,87,23,37700000
+126,Varane,Dortmund,84,31,28500000
+127,Kane,Napoli,83,25,43200000
+128,Silva,Chelsea,98,34,25700000
+129,Alderweireld,Dortmund,87,20,18500000
+130,Son,Bayern Munchen,88,31,16200000
+131,Busquets,Barcelona,82,20,24400000
+132,De Vrij,Arsenal,83,19,30800000
+133,Hummels,PSG,86,26,27300000
+134,Ter Stegen,Liverpool,82,21,19800000
+135,Mbappe,Dortmund,80,31,38300000
+136,Griezmann,Liverpool,84,27,34700000
+137,Iheanacho,Inter Milan,83,29,21400000
+138,Pepe,Barcelona,94,33,40200000
+139,Insigne,Manchester United,95,20,30300000
+140,Suarez,Bayern Munchen,92,23,20900000
+141,Dier,Chelsea,81,35,5300000
+142,Chilwell,Napoli,99,29,30800000
+143,Koulibaly,Arsenal,92,35,19100000
+144,Evans,Liverpool,98,27,35600000
+145,Zouma,Inter Milan,87,28,22700000
+146,Milik,Atletico Madrid,85,27,13700000
+147,Sancho,Barcelona,81,20,6600000
+148,Rudiger,Liverpool,84,29,18500000
+149,Rose,Liverpool,81,19,30000000
+150,Thomas,Dortmund,89,21,30000000
+151,Coman,Juventus,84,22,24300000
+152,Verratti,Atletico Madrid,86,26,20700000
+153,Ederson,Atletico Madrid,95,29,7200000
+154,J. Felix,Chelsea,82,24,24100000
+155,Messi,Inter Milan,94,29,15200000
+156,Rui Mario,Dortmund,87,21,38500000
+157,Lacazette,Juventus,90,29,19700000
+158,De Jong,Barcelona,81,26,30800000
+159,Dan James,Dortmund,87,25,46600000
+160,Matip,Manchester United,80,30,19800000
+161,Manolas,Barcelona,99,29,36700000
+162,Neymar,Atletico Madrid,87,24,24400000
+163,Coutinho,Bayern Munchen,89,24,27000000
+164,Lloris,Napoli,81,25,13900000
+165,Alba,Juventus,94,25,44800000
+166,Mane,Arsenal,93,24,6000000
+167,Higuain,Tottenham,97,25,11200000
+168,Soyuncu,Chelsea,96,28,25000000
+169,Wan Bissaka,Napoli,82,31,47800000
+170,Ramsey,Arsenal,90,29,13600000
+171,Courtois,Tottenham,90,25,9300000
+172,Leno,Barcelona,83,25,34300000
+173,Sanchez,Dortmund,82,19,38000000
+174,Cuadrado,PSG,80,28,20000000
+175,Allan,Chelsea,88,26,43100000
+176,Alcantara,Manchester United,82,31,33700000
