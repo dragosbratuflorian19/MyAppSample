@@ -1,0 +1,25 @@
+5. ML
+    5.1 k-NN
+    5.2 Naive Bayes
+    5.3 SVM
+    5.4 Decision Forests
+
+5.1 k-NN (Nearest Neighbors)
+
+^
+|
+|
+|
+| 	aa a  a		  o o  o   o
+|	 a  a 	x(a)    o o   o
+|	a a  a 	   	  oo o o  o
+|				
+|
+|
+|________________________________________________>
+Example:
+k = 3
+We have 2 classes: 'a' and 'o'
+We have to define the class of 'x' element.
+	- we search the nearest 3 elements
+	- if in the circle with 'x' as center, we have two a's and one 'o', then the x will belong to the class 'as'
