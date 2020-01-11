@@ -1,3 +1,7 @@
+"""
+This script is will predict the position of a football player, based on his Defence/Midfield/Attack ratings.
+"""
+
 import random
 import csv
 import math
@@ -5,17 +9,20 @@ import operator
 import pdb
 
 
+# Function to load the data and split it into the train and test sets
 def loadDataset(filename, split, trainingSet=[], testSet=[]):
     with open(filename, 'r') as csvfile:
         lines = csv.reader(csvfile)
         dataset = list(lines)
-        for x in range(len(dataset)):
+        for x in range(1, len(dataset)):  # ignore the header row
             for y in range(3):
                 dataset[x][y] = float(dataset[x][y])
             if random.random() < split:
                 trainingSet.append(dataset[x][:4])
             else:
                 testSet.append(dataset[x][:4])
+
+# Function to calculate the euclidean distance between
 
 
 def euclideanDistance(instance1, instance2, length):
@@ -74,8 +81,7 @@ def main():
         neighbors = getNeighbors(trainingSet, testSet[x], k)
         result = getResponse(neighbors)
         predictions.append(result)
-        print(f'{testSet[x]}> predicted=' + repr(result) +
-              ', actual=' + repr(testSet[x][-1]))
+        print(f'{testSet[x]} > predicted= {repr(result)}, actual= {testSet[x][-1]}')
     accuracy = getAccuracy(testSet, predictions)
     print('Accuracy: ' + repr(accuracy) + '%')
 
