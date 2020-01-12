@@ -13,11 +13,11 @@ df = pd.read_csv('football_players.csv')
 ratings_ar = np.array(df.drop(['position', 'name'], axis=1))
 position_ar = np.array(df['position'])
 
-# making the splitting between for training and data for testing
+# making the splitting between data for training and data for testing
 ratings_train, ratings_test, position_train, position_test = model_selection.train_test_split(
     ratings_ar, position_ar, test_size=0.2)
 # Creating the k-NN classifier tool
-knn_tool = neighbors.KNeighborsClassifier()
+knn_tool = neighbors.KNeighborsClassifier(n_jobs=-1)
 
 # Fitting the prepared data
 knn_tool.fit(ratings_train, position_train)
