@@ -94,3 +94,6 @@ predictions = knn_tool.predict(example_ratings)
 for i in range(len(example_ratings)):
     print(f'{example_names[i, 1]} was predicted {predictions[i]}, he is actually {example_names[i, 0]}')
 ###################################################
+# SVM
+it's a binary classifier
+cvxopt module for optimizatio
