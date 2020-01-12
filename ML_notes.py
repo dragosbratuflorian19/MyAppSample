@@ -73,38 +73,6 @@ plt.xlabel('Date')
 plt.ylabel('Price')
 plt.show()
 ###################################################
-# Linear regression
-y = m * x + between
-m = slope
-y = intersection with y
-m = [mean(x) * mean(y) - mean(x * y)] / [(mean(x)) ^ 2 - mean(x ^ 2)]
-b = mean(y) - m * mean(x)
-
-# Calculating m
-
-
-def best_fit_slope_and_intersect(xs, ys):
-    m = (((mean(xs) * mean(ys)) - mean(xs * ys)) /
-         ((mean(xs)**2) - mean(xs**2)))
-    b = mean(ys) - m * mean(xs)
-    return m, b
-
-###################################################
-# Calculate the error
-
-
-def squared_error(ys_orig, ys_line):
-    return sum((ys_line - ys_orig)**2)
-
-
-def coefficient_of_determination(ys_orig, ys_line):
-    y_mean_line = [mean(ys_orig) for y in ys_orig]
-    squared_error_regr = squared_error(ys_orig, ys_line)
-    squared_error_y_mean = squared_error(ys_orig, y_mean_line)
-    return 1 - (squared_error_regr / squared_error_y_mean)
-
-
-###################################################
 # making the splitting between for training and data for testing
 from sklearn import preprocessing, model_selection, neighbors
     ratings_train, ratings_test, position_train, position_test = sklearn.model_selection.train_test_split(
