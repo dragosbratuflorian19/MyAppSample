@@ -1,161 +1,160 @@
-defence,midfield,attack,position,name
-97,36,29,defender,Shaw
-80,43,32,defender,Mendy
-97,43,25,defender,Robertson
-89,35,26,defender,Emerson
-92,41,28,defender,Kolasinac
-95,41,26,defender,Rose
-95,40,30,defender,Chilwell
-99,34,33,defender,Marcelo
-83,37,25,defender,Alba
-96,44,31,defender,Saul
-91,44,32,defender,Alaba
-83,33,32,defender,Schulz
-81,31,25,defender,Alex Sandro
-93,39,35,defender,Biraghi
-86,45,33,defender,Rui Mario
-85,31,33,defender,Bernat
-83,32,31,defender,Maguire
-95,40,31,defender,Lindelof
-81,33,29,defender,Stones
-99,44,30,defender,Laporte
-88,44,27,defender,Van Dijk
-94,35,28,defender,Matip
-89,31,33,defender,Rudiger
-84,39,30,defender,Zouma
-88,43,26,defender,Chambers
-95,37,26,defender,Sokratis
-86,45,27,defender,Alderweireld
-87,37,26,defender,Vertonghen
-84,39,34,defender,Soyuncu
-98,43,32,defender,Evans
-91,43,27,defender,Ramos
-91,34,29,defender,Varane
-95,43,31,defender,Pique
-81,43,32,defender,Langlet
-93,36,26,defender,Felipe
-94,30,33,defender,Gimenez
-90,45,27,defender,Sule
-96,32,34,defender,Boateng
-81,39,26,defender,Hummels
-83,31,28,defender,Akanji
-82,38,31,defender,De Ligt
-83,45,29,defender,Bonucci
-81,44,35,defender,Godin
-87,40,32,defender,De Vrij
-81,41,33,defender,Koulibaly
-97,36,34,defender,Manolas
-87,44,33,defender,Silva
-80,37,32,defender,Marquinhos
-81,39,25,defender,Wan Bissaka
-81,38,26,defender,Walker
-83,35,25,defender,Arnold
-90,36,30,defender,Azpilicueta
-85,44,27,defender,M. Niles
-97,39,34,defender,Aurier
-80,44,33,defender,Ricardo
-81,44,28,defender,Carvajal
-85,44,31,defender,Semedo
-96,38,33,defender,Trippier
-87,34,28,defender,Kimmich
-84,45,35,defender,Hakimi
-89,40,29,defender,Cuadrado
-94,40,27,defender,D'Ambrosio
-96,31,33,defender,Di Lorenzo
-93,41,31,defender,Meunier
-32,95,50,midfielder,Eriksen
-45,98,55,midfielder,Matuidi
-41,91,46,midfielder,Sensi
-38,91,52,midfielder,Dier
-35,80,53,midfielder,Brozovic
-44,84,51,midfielder,Draxler
-35,97,45,midfielder,Torreira
-31,88,50,midfielder,Brandt
-40,87,55,midfielder,Fabinho
-33,90,52,midfielder,Barnes
-35,89,55,midfielder,Zielinski
-44,94,47,midfielder,Lucas
-42,88,52,midfielder,Witsel
-30,81,51,midfielder,Wijnaldum
-34,80,54,midfielder,De Jong
-32,89,45,midfielder,Koke
-42,95,51,midfielder,Correa
-31,94,49,midfielder,Kovacic
-35,96,47,midfielder,Busquets
-45,99,46,midfielder,Guendouzi
-41,81,48,midfielder,Gundogan
-39,91,52,midfielder,Verratti
-40,97,51,midfielder,Henderson
-39,88,45,midfielder,Fabian Ruiz
-32,86,53,midfielder,Rakitic
-39,95,54,midfielder,Gotze
-39,94,45,midfielder,Fred
-41,99,55,midfielder,McTominay
-39,84,54,midfielder,Coman
-32,83,51,midfielder,Casemiro
-36,83,53,midfielder,Ramsey
-31,91,49,midfielder,Madison
-39,92,45,midfielder,Ayoze
-43,83,55,midfielder,Modric
-45,86,54,midfielder,Ozil
-41,88,46,midfielder,Kross
-40,91,47,midfielder,Jorginho
-44,82,45,midfielder,Thomas
-38,96,53,midfielder,Coutinho
-45,83,50,midfielder,Bernardo
-44,88,50,midfielder,Alcantara
-40,94,52,midfielder,Pjanic
-33,94,49,midfielder,Kante
-35,90,50,midfielder,Di Maria
-39,98,52,midfielder,Pogba
-32,91,51,midfielder,De Bruyne
-43,89,55,midfielder,Borja Valero
-45,91,50,midfielder,Allan
-39,39,88,striker,T. Hazard
-44,42,93,striker,Alli
-45,35,92,striker,Martial
-36,32,89,striker,Mane
-35,44,87,striker,Mahrez
-37,44,92,striker,Dybala
-38,36,80,striker,Mertens
-44,44,99,striker,Sterling
-45,31,89,striker,Kane
-37,34,85,striker,Lacazette
-40,41,90,striker,Lukaku
-42,41,89,striker,Bale
-41,44,98,striker,Salah
-35,36,97,striker,Iheanacho
-42,42,97,striker,Sanchez
-41,39,82,striker,Insigne
-42,45,81,striker,Aubameyang
-42,36,97,striker,Pulisic
-44,37,80,striker,Firmino
-43,38,82,striker,Lewandowski
-45,43,95,striker,Gnabry
-39,39,85,striker,Pepe
-38,31,98,striker,Dan James
-41,39,94,striker,Tielemans
-41,31,92,striker,Griezmann
-45,42,84,striker,Vardy
-45,40,95,striker,Higuain
-38,44,92,striker,Rashford
-36,40,99,striker,J. Felix
-42,40,85,striker,Neymar
-38,32,98,striker,Benzema
-41,43,81,striker,Willian
-40,45,97,striker,Muller
-39,35,89,striker,Icardi
-36,42,81,striker,Ronaldo
-35,35,86,striker,Lautaro
-45,40,80,striker,Reus
-39,44,85,striker,Mbappe
-38,35,84,striker,Sancho
-44,37,97,striker,Costa
-43,34,84,striker,Messi
-45,36,87,striker,Milik
-45,39,81,striker,Aguero
-39,36,85,striker,Morata
-37,42,93,striker,Suarez
-43,40,97,striker,Abraham
-42,31,83,striker,Hazard
-43,36,81,striker,Son
+95,43,26,defender,Shaw
+84,31,33,defender,Mendy
+92,34,32,defender,Robertson
+94,34,30,defender,Emerson
+81,40,32,defender,Kolasinac
+80,45,34,defender,Rose
+90,30,32,defender,Chilwell
+93,34,32,defender,Marcelo
+96,32,29,defender,Alba
+84,45,29,defender,Saul
+88,34,28,defender,Alaba
+89,35,29,defender,Schulz
+89,43,30,defender,Alex Sandro
+89,31,30,defender,Biraghi
+91,31,25,defender,Rui Mario
+82,37,25,defender,Bernat
+82,35,26,defender,Maguire
+81,39,28,defender,Lindelof
+80,30,33,defender,Stones
+89,38,32,defender,Laporte
+95,43,28,defender,Van Dijk
+89,38,35,defender,Matip
+98,35,35,defender,Rudiger
+85,41,29,defender,Zouma
+85,36,35,defender,Chambers
+97,43,28,defender,Sokratis
+93,40,28,defender,Alderweireld
+90,44,32,defender,Vertonghen
+90,37,30,defender,Soyuncu
+91,34,26,defender,Evans
+99,42,32,defender,Ramos
+86,32,34,defender,Varane
+87,44,33,defender,Pique
+90,35,32,defender,Langlet
+97,43,29,defender,Felipe
+94,38,26,defender,Gimenez
+91,33,29,defender,Sule
+95,42,30,defender,Boateng
+88,38,30,defender,Hummels
+82,42,32,defender,Akanji
+99,31,25,defender,De Ligt
+85,44,30,defender,Bonucci
+86,43,34,defender,Godin
+86,40,30,defender,De Vrij
+90,32,31,defender,Koulibaly
+84,37,31,defender,Manolas
+85,40,31,defender,Silva
+82,39,32,defender,Marquinhos
+88,32,28,defender,Wan Bissaka
+91,43,29,defender,Walker
+96,31,30,defender,Arnold
+93,33,35,defender,Azpilicueta
+81,36,32,defender,M. Niles
+89,30,35,defender,Aurier
+85,30,27,defender,Ricardo
+94,35,30,defender,Carvajal
+86,34,31,defender,Semedo
+98,42,29,defender,Trippier
+96,34,25,defender,Kimmich
+80,30,34,defender,Hakimi
+87,43,34,defender,Cuadrado
+95,39,34,defender,D'Ambrosio
+85,31,31,defender,Di Lorenzo
+96,41,31,defender,Meunier
+35,87,46,midfielder,Kante
+38,99,48,midfielder,Bernardo
+42,92,53,midfielder,Modric
+40,84,45,midfielder,Fabian Ruiz
+32,85,54,midfielder,Fred
+34,89,55,midfielder,De Jong
+37,91,49,midfielder,Thomas
+43,84,53,midfielder,Verratti
+45,94,48,midfielder,Alcantara
+33,91,49,midfielder,Pogba
+31,93,47,midfielder,Madison
+32,94,53,midfielder,Rakitic
+38,93,50,midfielder,Di Maria
+34,99,47,midfielder,Lucas
+41,98,55,midfielder,Busquets
+38,91,50,midfielder,Kross
+41,99,50,midfielder,Guendouzi
+32,97,52,midfielder,Draxler
+31,83,54,midfielder,Eriksen
+32,90,47,midfielder,Casemiro
+36,93,48,midfielder,McTominay
+37,83,49,midfielder,Zielinski
+36,82,49,midfielder,Jorginho
+33,84,53,midfielder,Brozovic
+33,85,54,midfielder,Sensi
+39,82,53,midfielder,Matuidi
+33,88,51,midfielder,Allan
+39,95,54,midfielder,Kovacic
+36,99,47,midfielder,Gotze
+44,87,52,midfielder,Pjanic
+30,81,55,midfielder,Fabinho
+34,92,45,midfielder,Witsel
+30,84,52,midfielder,Ramsey
+45,91,46,midfielder,Torreira
+33,97,47,midfielder,De Bruyne
+44,91,47,midfielder,Koke
+31,88,45,midfielder,Wijnaldum
+32,85,55,midfielder,Borja Valero
+36,89,45,midfielder,Henderson
+35,96,46,midfielder,Correa
+38,91,49,midfielder,Brandt
+40,87,50,midfielder,Gundogan
+39,88,53,midfielder,Coutinho
+44,96,52,midfielder,Coman
+31,80,51,midfielder,Dier
+41,86,52,midfielder,Ayoze
+34,94,54,midfielder,Barnes
+34,92,47,midfielder,Ozil
+40,39,82,striker,Son
+40,36,97,striker,Firmino
+38,31,81,striker,Lewandowski
+41,36,86,striker,Neymar
+42,39,85,striker,J. Felix
+36,33,87,striker,Kane
+40,34,98,striker,Pepe
+42,30,81,striker,Higuain
+42,45,82,striker,Sterling
+37,34,85,striker,Griezmann
+45,44,82,striker,Muller
+39,31,92,striker,Tielemans
+39,39,98,striker,Mane
+42,34,96,striker,Martial
+45,34,86,striker,Aguero
+38,36,87,striker,Ronaldo
+41,32,84,striker,Gnabry
+42,38,83,striker,Willian
+38,38,80,striker,Sanchez
+37,33,92,striker,Mahrez
+43,37,81,striker,Sancho
+45,37,83,striker,T. Hazard
+38,34,99,striker,Aubameyang
+45,32,93,striker,Lautaro
+35,37,91,striker,Dan James
+43,37,89,striker,Suarez
+42,42,99,striker,Abraham
+35,45,96,striker,Hazard
+40,30,93,striker,Dybala
+40,38,81,striker,Salah
+35,39,96,striker,Benzema
+45,42,91,striker,Vardy
+44,39,88,striker,Iheanacho
+41,44,82,striker,Lacazette
+38,41,81,striker,Insigne
+42,42,87,striker,Icardi
+36,34,90,striker,Milik
+38,31,88,striker,Alli
+38,32,85,striker,Morata
+37,41,97,striker,Lukaku
+38,37,90,striker,Reus
+41,30,95,striker,Mertens
+35,45,96,striker,Mbappe
+44,43,83,striker,Messi
+45,44,81,striker,Costa
+45,31,87,striker,Rashford
+38,31,86,striker,Pulisic
+35,43,90,striker,Bale
