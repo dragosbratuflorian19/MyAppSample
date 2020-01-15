@@ -1,4 +1,18 @@
+Regression
+k - NN
+SVM
+k Means
+Mean Shift
 ###################################################
+Naive bayes
+NLP
+Decision Forest
+###################################################
+Neural Networks
+Boltzmann machines
+Auto encoders
+###################################################
+
 # Libraries
 import pandas as pd  # ==> Needed for working with dataframes
 import quandl  # ==> get dataframes from the internet
@@ -97,3 +111,8 @@ for i in range(len(example_ratings)):
 # SVM
 it's a binary classifier
 cvxopt module for optimizatio
+inner product is the same with dot product
+x1 = np.array([1, 2, 3])
+x2 = np.array([2, 1, 3])
+np.dot(x1, x2)
+np.inner(x1, x2)

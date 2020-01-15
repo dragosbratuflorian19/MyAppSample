@@ -193,4 +193,8 @@
 8. LINUX: Show all users currently on the server
 8. LINUX: Making shortcuts using alias
 8. LINUX: Locate a file
-8. LINUX: Write to a file using echo
+9. SKLEARN: Make a prediction using linear regression
+9. SKLEARN: Classify some data using k-NN
+9. SKLEARN: Classify some SVM
+9. SKLEARN: Group some data using kMeans
+9. SKLEARN: Group some data using Mean Shift

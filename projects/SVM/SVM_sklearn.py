@@ -10,7 +10,7 @@ X = np.array(df.drop(['position'], 1))
 y = np.array(df['position'])
 
 X_train, X_test, y_train, y_test = model_selection.train_test_split(
-    X, y, test_size=0.4)
+    X, y, test_size=0.2)
 clf = svm.SVC()
 
 clf.fit(X_train, y_train)
