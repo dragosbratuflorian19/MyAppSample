@@ -5,21 +5,22 @@ enel = 20
 intretinere = 70
 telefon = 35
 sala = 135
+tuns = 70
+rata = 271
 metrou = 35
 extra = 100
 mancare = 30 * (5 + 5 + 15)
-rata = 542
 cheltuieli = sum([chirie, digi, gaz, enel, intretinere,
-                  telefon, sala, metrou, extra, mancare])
-income_10 = 2450 - cheltuieli
-income_25 = 2150
-initial_BCR = 7685
-initial_BRD = 2407
+                  telefon, sala, tuns, rata, metrou, extra, mancare])
+income_10 = 2600 - cheltuieli
+income_25 = 2000
+initial_BCR = 10000
+initial_BRD = 1500 + 142 + 28
 # on 10 Feb
-BCR = initial_BCR + 2000 + 4000
-BRD = initial_BRD - 2000
+BCR = initial_BCR + 2000
+BRD = initial_BRD + 2565.4 - cheltuieli
 for month in ['MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST']:
-    BCR += income_25 - rata
+    BCR += income_25
     BRD += income_10
 print(f'BCR: {BCR} lei sau {BCR/4.6} euro')
 print(f'BRD: {BRD} lei sau {BRD/4.6} euro')
