@@ -14,28 +14,21 @@ team = teams.get('BAR', 'Does Not Exist!!!')
 print(team)  # Does Not Exist!!!
 ##################################################################################
 # Classes Inheritance
-
-
 class Patruped():
   def mers(self):
     print("merge in 4 membre")
 
-
 class Caine(Patruped):
   def __init__(self, name):
     self.name = name
-
   def latra(self):
     print("{} face ham ham".format(self.name))
-
 
 class Pisica(Patruped):
   def __init__(self, name):
     self.name = name
-
   def miaun(self):
     print("{} face miaun miaun".format(self.name))
-
 
 oscar = Caine(name='Oscar')
 oscar.latra()  # Oscar face ham ham
@@ -57,28 +50,21 @@ for file in path.glob('*.*'):
   print(file)
 ##################################################################################
 # Classes super method
-
-
 class Parent(object):
   def override(self):
     print("PARENT override()")
-
   def implicit(self):
     print("PARENT implicit()")
-
   def altered(self):
     print("PARENT altered()")
-
 
 class Child(Parent):
   def override(self):
     print("CHILD override()")
-
   def altered(self):
     print("CHILD, BEFORE PARENT altered()")
     super(Child, self).altered()
     print("CHILD, AFTER PARENT altered()")
-
 
 dad = Parent()
 son = Child()
@@ -86,19 +72,20 @@ dad.implicit()  # PARENT implicit()
 son.implicit()  # PARENT implicit()
 dad.override()  # PARENT override()
 son.override()  # CHILD override()
-dad.altered()  # PARENT altered()
+dad.altered()  	# PARENT altered()
 son.altered()   # CHILD, BEFORE PARENT altered()
-# PARENT altered()
-# CHILD, AFTER PARENT altered()
+				# PARENT altered()
+				# CHILD, AFTER PARENT altered()
 ##################################################################################
 # Formatted print
 print('{0} {1} {0}'.format(True, False))  # True False True
 print('{0:04} {1:.5f}'.format(5, 5))  # 0005 5.00000
 print('{0:>4} {1:>32}'.format('*', '#'))  # *                                #
 for i in range(16):
-  print('{0:3} {1:16}'.format(i, 10**i))
+	print('{0:3} {1:16}'.format(i, 10**i))
 # Print a size x size multiplication table
 ##################################################################################
+# Table trick
 size = int(input("Please enter the table size: "))
 for row in range(1, size + 1):
   for column in range(1, size + 1):
@@ -110,85 +97,49 @@ for row in range(1, size + 1):
 print("I will inject %s here and %d here" %
       ('text', 34))  # I will inject text here and 34 here
 ##################################################################################
-# Comprehension
-
-
-def cauta_caine(x, y):
-  if x.lower() in y.lower():
-    return True
-  else:
-    return False
-# sau
-
-
-def cauta_cainev2(cuvant, sir):
-  return cuvant.lower() in sir.lower()
-##################################################################################
 # Args and Kwargs
-
-
 def myfunc(*args, **kwargs):
   print(f"I would like {args[1]} {kwargs['car']}.")
 
 
-# I would like 20 Mercedeses.
-myfunc(10, 20, 30, food='Pizzas', car='Mercedeses')
+myfunc(10, 20, 30, food='Pizzas', car='Mercedeses') # I would like 20 Mercedeses.
 ##################################################################################
 # Map, filter and lambda
-
-
 def printare(nume):
   return f'{nume} e BO$$'
-
-
 def patrat(numar):
   return numar ** 2
-
-
 def check_nume(numele):
   return 'elena' in numele.lower()
-
 
 nume_fete = ['Elena Popescu', 'Ivan Elena', 'Simona Urs', 'Raluca Elena']
 numere = [1, 2, 3, 4, 5]
 catalog = ['Costel', 'Nicu', 'Gigel']
-
 lista = list(map(printare, catalog))
 print(lista)  # ['Costel e BO$$', 'Nicu e BO$$', 'Gigel e BO$$']
-
 for item in map(patrat, numere):
   print(item, end=" ")  # 1 4 9 16 25
-
 lista3 = list(filter(check_nume, nume_fete))
 print('\n', lista3)  # ['Elena Popescu', 'Ivan Elena', 'Raluca Elena']
 numere = [2, 5, 7, 8, 4]
 lista = list(map(lambda num: num ** 2, numere))
 print(lista)  # [4, 25, 49, 64, 16]
-
 titulaturi = ['Raluca', 'Elena', 'Bianca', 'Casandra']
 lista2 = list(filter(lambda nume: 'ca' in nume.lower(), titulaturi))
 print(lista2)  # ['Raluca', 'Bianca', 'Casandra']
 ##################################################################################
 # Polymorphism
-
-
 class Dog():
-
   def __init__(self, name):
     self.name = name
-
   def speak(self):
     return self.name + ' says wof'
 
-
 class Cat():
-
   def __init__(self, name):
     self.name = name
-
   def speak(self):
     return self.name + ' says meow'
-
 
 niko = Dog('niko')
 felix = Cat('felix')
@@ -197,39 +148,31 @@ print(felix.speak())
 
 for pet in [niko, felix]:
   print(pet.speak())
-
-
 def speaking_function(pet):
   print(pet.speak())
 
-
 print(speaking_function(niko))
 print(speaking_function(felix))
-
-
+##################################################################################
+# Magic functions 
 class Book:
-
   def __init__(self, titlu, autor, pagini):
     self.titlu = titlu
     self.autor = autor
     self.pagini = pagini
-
   def __str__(self):
     return f'{self.titlu}, scrisa de {self.autor}'
-
   def __len__(self):
     return self.pagini
-
   def __del__(self):
     print('O carte a fost stearsa')
-
 
 carte = Book("Cool", 'BRATU', 100)
 print(carte)
 print(len(carte))
 del carte
-
-
+##################################################################################
+# __name__ , '__main__'
 def funct():
   print('FUNC() IN ONE.PY')
 
@@ -252,15 +195,15 @@ if __name__ == '__main__':
   print('TWO.PY is run directly')
 else:
   print('Two.py has been imported')
+##################################################################################
+# Unittest
+
 # def cap_text(text):
 #     return text.title()
-
 import unittest
 import cap
 
-
 class TestCap(unittest.TestCase):
-
   def test_one_word(self):
     text = 'python'
     result = cap.cap_text(text)
@@ -270,7 +213,6 @@ class TestCap(unittest.TestCase):
     text = 'molty python'
     result = cap.cap_text(text)
     self.assertEqual(result, 'Molty Python')
-
 
 if __name__ == '__main__':
   unittest.main()
@@ -282,7 +224,6 @@ import cap
 
 
 class TestAdunare(unittest.TestCase):
-
   def test_two_nums(self):
     a = 4
     b = 6
@@ -300,16 +241,15 @@ class TestAdunare(unittest.TestCase):
 if __name__ == '__main__':
   unittest.main()
 
-
+##################################################################################
+# Funcsaption
 def hello(name='Dragos'):
   print('The hello() func has been executed')
 
   def greet():
     return '\t This is a greet funct inside hello!'
-
   def welcome():
     return '\t this is inside hello'
-
   print('I am going to return a funct')
   if name == 'Dragos':
     return greet
@@ -331,54 +271,41 @@ def other(some_def_func):
 
 
 other(hello)
-
-
+##################################################################################
+# Decorators
 def new_decorator(original_func):
-
   def wrap_func():
     print('some extra code, before the original function')
     original_func()
     print('Some extra code, after the original func')
   return wrap_func
 
-
 def func_needs_decorator():
   print('I want to be decorated!')
-
 
 @new_decorator
 def func_needs_decorator():
   print('I want to be decorated!')
 
-
 func_needs_decorator()
 
-
 def inmultire_impartire(original_func):
-
   def wrap_func(a, b):
     print(f'produsul a 2 numere este{a * b}')
     original_func(a, b)
     print(f'catul a 2 numere este{a / b}')
   return wrap_func
 
-
+@inmultire_impartire
 def operatii_matematice(a, b):
   print(f'suma a 2 numere este{a + b}')
 
-
-@inmultire_impartire
-def operatii_matematice(a, b):
-  print(f'suma a 2 numere este {a + b}')
-
-
 operatii_matematice(3, 5)
-
-
+##################################################################################
+# Generators
 def create_cubes(n):
   for x in range(n):
     yield x**3
-
 
 generatorul = create_cubes(9)
 copie_gen = create_cubes(9)
@@ -388,10 +315,14 @@ print(lista)  # [0, 1, 8, 27, 64, 125, 216, 343, 512]
 print(next(copie_gen))  # 0
 print(next(copie_gen))  # 1
 print(next(copie_gen))  # 8
+##################################################################################
+# Iterators
 s = 'Hello'
 s_iter = iter(s)
 print(next(s_iter))  # H
 print(next(s_iter))  # e
+##################################################################################
+# Collections: Counter
 from collections import Counter
 
 lista = [1, 2, 3, 1, 2, 2, 2, 3, 1, 2, 8]
@@ -411,6 +342,8 @@ print(Counter(cuvinte))  # Counter({'mere': 4, 'si': 2, 'pere': 2, 'Ana': 1
 # Counter(dict(list_of_pairs)) - convert from a list of (elem, cnt) pairs
 # c.most_common() [:-n-1:-1] - n Least common elements
 # c += Counter() - Remove zero and negative counts
+##################################################################################
+# Collections: Default dict
 from collections import defaultdict
 
 d = defaultdict(lambda: 0)
@@ -418,40 +351,16 @@ d['one']
 d['two'] = 2
 # defaultdict(<function <lambda> at 0x0000000002201828>, {'a': 0, 'b': 2})
 print(d)
-from collections import OrderedDict
-
-dictionar_normal1 = {}
-dictionar_normal2 = {}
-dictionar_normal1['a'] = '1'
-dictionar_normal1['b'] = '2'
-dictionar_normal2['b'] = '2'
-dictionar_normal2['a'] = '1'
-print(dictionar_normal1 == dictionar_normal2)  # True
-dictionar_ordonat1 = OrderedDict()
-dictionar_ordonat2 = OrderedDict()
-dictionar_ordonat1['a'] = '1'
-dictionar_ordonat1['b'] = '2'
-dictionar_ordonat2['b'] = '2'
-dictionar_ordonat2['a'] = '1'
-print(dictionar_ordonat1 == dictionar_ordonat2)  # False
-from collections import namedtuple
-
-standard_tuple = (1, 2, 3)
-print(standard_tuple[1])  # 2
-
-Dog = namedtuple('Dog', 'varsta rasa nume')
-sam = Dog(varsta=14, rasa='Lab', nume='Sammy')
-print(sam.nume)  # Sammy
-print(sam[2])  # Sammy
-print(sam.varsta)  # 14
+##################################################################################
+# Datetime
 import datetime
 t = datetime.time(5, 25, 1)
 print(t)  # 05:25:01
 print(t.hour)  # 5
 print(datetime.time.min)  # 00:00:00
 print(datetime.time.max)  # 23:59:59.999999
-import datetime
 
+import datetime
 today = datetime.date.today()
 print(today)  # 2019-10-14
 print(today.year)  # 2019
@@ -462,6 +371,8 @@ print(d1)  # 2015-03-11
 d2 = d1.replace(year=1990)
 print(d2)  # 1990-03-11
 print(d1 - d2)  # 9131 days, 0:00:00
+##################################################################################
+# PDB Module
 import pdb
 
 x = [1, 3, 4]
@@ -472,6 +383,8 @@ print(result)
 pdb.set_trace()
 result2 = y + x
 print(result2)
+##################################################################################
+# Cronometer
 import timeit
 
 print(timeit.timeit('"-".join(str(n) for n in range(100))', number=10000))
@@ -480,7 +393,32 @@ print(timeit.timeit('"-".join([str(n) for n in range(100)])', number=10000))
 # 0.345903018
 print(timeit.timeit('"-".join(map(str,range(100)))', number=10000))
 # 0.222068923
+##################################################################################
+# Regular expressions
 import re
+
+. - Any character except new line
+\d - digit(0 - 9)
+\D - Not a digit(0 - 9)
+\w - Word character(a - z, A - Z, 0 - 9, _)
+\W - Not a word character(a - z, A - Z, 0 - 9, _)
+\s - Whitespaces(space, tab, newline)
+\S - Not whitespaces(space, tab, newline)
+\b - Word boundary
+\B - Not word boundary
+^ - Beginning of a string
+$ - End of a string
+
+Quantifiers:
+* - 0 or More
++ - 1 or More
+? - 0 or One
+{3} - Exact number
+{3, 4} - Range of numbers(min, max)
+
+Groups:
+| - Either or
+() - Group
 
 text_phrase = 'sdsd..sssddd...sdddsddd...dsds...dsssss...sdddd'
 text_patterns = ['sd*',  # s followed by zero or more d's
@@ -489,71 +427,15 @@ text_patterns = ['sd*',  # s followed by zero or more d's
                  'sd{3}',  # s followed by three d's
                  'sd{2,3}',  # s followed by two to three d's
                  ]
-
-
 def multi_re_find(patterns, phrase):
   for pattern in patterns:
     print(f'searching the phrase using the re check: {pattern}')
     print(re.findall(pattern, phrase))
     print('\n')
 
-
 multi_re_find(text_patterns, text_phrase)
-import re
-
-test_phrase = 'This is a string! But it has punctuation. How can we remove it?'
-x = re.findall('[^!.? ]+', test_phrase)
-print(x)
-print(hex(13))  # 0xd
-print(bin(14))  # 0b1110
-print(pow(2, 3, 3))  # (2^3)%3 = 2
-print(abs(-2))  # 2
-print(round(3.1))  # 3.0 (Always float)
-print(round(1.2345, 2))  # 1.23
-s = 'United'
-print(s.isalnum())  # True
-print(s.islower())  # False
-print(s.isalpha())  # True
-s = set()
-s.add(1)
-s.add(2)
-print(s)  # {1, 2}
-s.clear()
-print(s)  # set()
-s = {1, 2, 3}
-sc = s.copy()
-print(sc)  # {1, 2, 3}
-s.add(4)
-print(s)  # {1, 2, 3, 4}
-print(s.difference(sc))  # {4}
-s1 = {1, 2, 3}
-s2 = {1, 4, 5}
-s1.difference_update(s2)
-print(s1)  # {2, 3}
-s.discard(2)  # {1, 2, 3, 4}
-print(s)  # {1, 3, 4}
-s1 = {1, 2, 3}
-s2 = {1, 2, 4}        #
-print(s1.intersection(s2))  # {1, 2}
-s1.intersection_update(s2)
-print(s1)  # {1, 2}
-s1 = {1, 2}
-s2 = {1, 2, 4}
-s3 = {5}
-print(s1.isdisjoint(s2))  # False
-print(s1.isdisjoint(s3))  # True
-print(s1.issubset(s2))  # True
-print(s2.issuperset(s1))  # True
-print(s1.symmetric_difference(s2))  # {4}
-print(s1.union(s2))  # {1, 2, 4}
-s1 = {1, 2}
-s2 = {1, 2, 4}
-print(s1.update(s2))
-z = {k: v**2 for k, v in zip(['a', 'b'], range(2))}
-print(z)  # {'a': 0, 'b': 1}
-print(ord('a'))  # 97
-print(ord('b'))  # 98
-print(ord('A'))  # 65
+##################################################################################
+# Tricks
 dividend = int(input('Enter dividend: '))
 divisor = int(input('Enter divisor: '))
 msg = dividend / divisor if divisor != 0 else 'Error, cannot divide by zero'
@@ -562,42 +444,8 @@ n = int(input("Enter a number: "))
 print('|', n, '| = ', (-n if n < 0 else n), sep='')
 nume = 'dragos' if 'e' in 'Daniel' else 'Bratu'
 print(nume)
-count = sum = 0
-print('Please provide five nonnegative numbers when prompted')
-while count < 5:
-  # Get value from the user
-  val = float(input('Enter number: '))
-  if val < 0:
-    print('Negative numbers not acceptable! Terminating')
-    break
-  count += 1
-  sum += val
-else:
-  print('Average =', sum / count)
-import turtle
-
-
-def o_linie(numar, culoare):
-  for i in range(numar):
-    turtle.pencolor(culoare)
-    turtle.forward(200)  # Start
-    turtle.left(90)
-    turtle.forward(1)
-    turtle.left(90)
-    turtle.forward(200)
-    turtle.right(90)
-    turtle.forward(1)
-    turtle.right(90)
-
-
-o_linie(5, 'red')
-o_linie(5, 'blue')
-o_linie(5, 'red')
-o_linie(5, 'blue')
-o_linie(5, 'red')
-
-turtle.hideturtle()
-turtle.exitonclick()
+##################################################################################
+# Time module
 from time import perf_counter, sleep
 print("Enter your name: ", end="")
 start_time = perf_counter()
@@ -607,104 +455,28 @@ print(name, "it took you", elapsed, "seconds to respond")
 for count in range(10, -1, -1):  # Range 10, 9, 8, ..., 0
   print(count)  # Display the count
   sleep(1)  # Suspend execution for 1 second
-import sys
-sum = 0
-while True:
-  x = int(input('Enter a number (999 ends):'))
-  if x == 999:
-    sys.exit(0)
-  sum += x
-print('Sum is', sum)
-x1 = eval(input('Entry x1? '))  # 4
-print('x1 =', x1, ' type:', type(x1))  # x1 = 4  type: <class 'int'>
-x2 = eval(input('Entry x2? '))  # 4.0
-print('x2 =', x2, ' type:', type(x2))  # x2 = 4.0  type: <class 'float'>
-x3 = eval(input('Entry x3? '))  # 'x1'
-print('x3 =', x3, ' type:', type(x3))  # x3 = x1  type: <class 'str'>
-x4 = eval(input('Entry x4? '))  # x1
-print('x4 =', x4, ' type:', type(x4))  # x4 = 4  type: <class 'int'>
-x5 = eval(input('Entry x5? '))  # x6
-print('x5 =', x5, ' type:', type(x5))  # NameError: name 'x6' is not defined
-x = 4e3
-print(x)  # 4000.0"
-
-
-def gcd(m, n):
-  min = m if m < n else n
-  largest_factor = 1
-  for i in range(1, min + 1):
-    if m % i == 0 and n % i == 0:
-      largest_factor = i  # Found larger factor
-  return largest_factor
-
-
-def get_int():
-  return int(input("Please enter an integer: "))
-
-
-def main():
-  n1 = get_int()
-  n2 = get_int()
-  print("gcd(", n1, ",", n2, ") = ", gcd(n1, n2), sep="")
-
-
-main()
-from math import sqrt
-
-
-def is_prime(n):
-  root = round(sqrt(n)) + 1
-  # Try all potential factors from 2 to the square root of n
-  for trial_factor in range(2, root):
-    if n % trial_factor == 0:  # Is it a factor?
-      return False  # Found a factor
-  return True  # No factors found
-
-
-def main():
-  max_value = int(input("Display primes up to what value? "))
-  for value in range(2, max_value + 1):
-    if is_prime(value):  # See if value is prime
-      print(value, end=" ")  # Display the prime number
-
-
-main()
-word = "ABCD"
+##################################################################################
+# RJust, LJust
 print(word.rjust(10, "*"))  # ******ABCD
 print(word.rjust(3, "*"))  # ABCD
 print(word.rjust(15, ">"))  # >>>>>>>>>>>ABCD
 print(word.rjust(10))  # ABCD
-sir = "21ABCD1A23"
-print(sir.strip('123'))  # ABCD1A
-len(sir) == sir.__len__()
-sir[2] == sir.__getitem__(2)
-pairs = [(x, y) for x in [1, 2, 3] for y in ['a', 'b']]
-print(pairs)  # [(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b'), (3, 'a'), (3, 'b')]
+##################################################################################
+# One line prime numbers
 print([p for p in range(2, 80) if not [x for x in range(2, p) if p % x == 0]])
-lst = [2 * i for i in range(6)]
-print(lst)  # Typical list printing
-print(*lst)  # Print just the list elements
-# Print the list in a special way
-print(*lst, sep=" and ", end="--that's all folks!\n")
+##################################################################################
+# Dictionary comprehension
 lista = ['a', 'b', 'c']
 numere = [1, 2, 3]
 dictionar = dict(zip(lista, numere))
 print(dictionar)
-a = {1, 2, 3, 4}
-b = {3, 4, 5, 6, 7}
-print(a | b)  # {1, 2, 3, 4, 5, 6, 7}
-print(a & b)  # {3, 4}
-print(a - b)  # {1, 2}
-print(a ^ b)  # {1, 2, 5, 6, 7}
-S = {-1, -5, 4}
-print(any([x > 0 for x in S]))  # True
-print(all([x > 0 for x in S]))  # False
-x = 1, 2, 3, 4, 5, 6
+##################################################################################
+# Unpacking
 _, _, *y, _, _ = x
 s = y
 print(s)  # [3, 4]
-
-
+##################################################################################
+# Linked lists
 class Node:
   def __init__(self, informatie=None):
     self.informatie = informatie
@@ -775,8 +547,8 @@ x.ins_bet(x.informatie_inceput.adresa_urmatoare.adresa_urmatoare, 'Chelsea')
 x.ins_bet(x.informatie_inceput.adresa_urmatoare.adresa_urmatoare, 'Barcelona')
 x.deletion('Barcelona')
 x.printing()
-
-
+##################################################################################
+# Objects sum
 class Operations():
   def __init__(self, *args):
     if len(args) == 0:
@@ -801,8 +573,8 @@ z = x + y + t
 w = x * y * t
 print(z.numbers)
 print(w.numbers)
-
-
+##################################################################################
+# Objects comparison
 class Comparison():
   def __init__(self, x):
     self.x = x
@@ -824,8 +596,8 @@ if __name__ == '__main__':
   print(obj1 > obj2)  # False
   print(obj1 == obj2)  # False
 # also iadd/isub/imul/idiv/ifloordivi/mod/ipower/ilshift/irshift/iand/ior/ixor
-
-
+##################################################################################
+# Dictionaries sum
 class dictionary(dict):
   def __add__(self, other):
     self.update(other)
@@ -835,55 +607,20 @@ class dictionary(dict):
 dict1 = dictionary({'firstname': 'Dragos'})
 dict2 = dictionary({'lastname': 'BRATU'})
 print(dict1 + dict2)
-
-
-class LenthConversion:
-
-  value = {'mm': 0.001, 'cm': 0.01, 'm': 1, 'km': 1000, 'in': 0.254, 'ft': 0.3048,
-           'yd': 0.9144, 'mi': 1609.344}
-
-  def __init__(self, x, value_unit='m'):
-    self.x = x
-    self.value_unit = value_unit
-
-  def Convert_to_meters(self):
-    return self.x * LenthConversion.value[self.value_unit]
-
-  def __add__(self, other):
-    ans = self.Convert_to_meters() + other.Convert_to_meters()
-    return LenthConversion(ans / LenthConversion.value[self.value_unit], self.value_unit)
-
-  def __str__(self):
-    return str(self.Convert_to_meters)
-
-  def __repr__(self):
-    return "LengthConversion(" + str(self.x) + ' ' + self.value_unit + ")"
-
-
-obj1 = LenthConversion(0, 'm') + LenthConversion(52, 'cm')
-print(repr(obj1))
-print(obj1)
-
-
-def teams(*args, **kwargs):
-  print(args)
-  print(kwargs)
-
-
-england = ['United', 'Chelsea']
-spain = {'spain_1': 'Barcelona', 'spain_2': 'Real'}
-teams('United', "Chelsea", spain_1='Barcelona', spain_2='Real')
-teams(*england, **spain)
+##################################################################################
+# Virtual environment
 pip install virtualenv
 virtualenv project1_env
 source project1_env / bin / activate
 pip freeze - -local > requirements.txt
 deactivate
 pip install - r requirements.txt
+##################################################################################
+# Generator comprehension
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 my_gen = (n * n for n in nums)
-
-
+##################################################################################
+# Object sorting
 class Angajat():
   def __init__(self, nume, varsta, salariu):
     self.nume = nume
@@ -902,22 +639,23 @@ angajati = [a1, a2, a3]
 
 ang_sort_sal = sorted(angajati, key=lambda e: e.salariu, reverse=True)
 print(ang_sort_sal)
+##################################################################################
+# OS module
 import os
 
 print(os.getcwd())
 os.chdir('D:\\LocalData\\py06366\\OneDrive - Alliance')
 print(os.removedirs('D:\\LocalData\\py06366\\OneDrive - Alliance\\MaaanU'))
-import os
-from datetime import datetime
 
-mod_time = os.stat('Server.py').st_mtime
-print(datetime.fromtimestamp(mod_time))
 import os
 
 for dir_path, dir_names, file_names in os.walk('C:\\Users\\py06366\\OneDrive - Alliance\\Pyhon\\a\\PyCharm'):
   print('Current Path:', dir_path)
   print('Directories:', dir_names)
   print('Files:', file_names)
+
+##################################################################################
+# File handling
 with open('client1.py', 'r+') as f:
   size_to_read = 10
   f_contents = f.read(size_to_read)
@@ -931,17 +669,7 @@ with open('client1.py', 'r+') as f:
   f.seek(0)
   f_contents = f.read(size_to_read)
   print(f_contents)
-import random
-
-value = random.uniform(1, 10)
-print(value)  # 4.15449409933993
-import random
-
-colors = ['Red', 'Black', 'Green']
-roulette = random.choices(colors, weights=[18, 18, 2], k=5)
-print(roulette)  # ['Red', 'Black', 'Black', 'Red', 'Black']
-import os
-
+# renaming files
 os.chdir('C:\\Users\\py06366\\OneDrive - Alliance\\Pyhon\\P1\\moby\\Fisiere')
 for f in os.listdir():
   file_name, file_extention = os.path.splitext(f)
@@ -951,415 +679,14 @@ for f in os.listdir():
   numar = numar.strip()
   nume_nou = f'{numar}-{echipa}{file_extention}'
   os.rename(f, nume_nou)
-. - Any character except new line
-\d - digit(0 - 9)
-\D - Not a digit(0 - 9)
-\w - Word character(a - z, A - Z, 0 - 9, _)
-\W - Not a word character(a - z, A - Z, 0 - 9, _)
-\s - Whitespaces(space, tab, newline)
-\S - Not whitespaces(space, tab, newline)
-\b - Word boundary
-\B - Not word boundary
-^ - Beginning of a string
-$ - End of a string
+##################################################################################
+# Random module
+import random
 
-Quantifiers:
-* - 0 or More
-+ - 1 or More
-? - 0 or One
-{3} - Exact number
-{3, 4} - Range of numbers(min, max)
+value = random.uniform(1, 10)
+print(value)  # 4.15449409933993
 
-Groups:
-| - Either or
-() - Group
-for n in range(1, 11):
-  print(f'the value is {n:03}')
-from functools import wraps
-
-
-def my_logger(original_function):
-  import logging
-  logging.basicConfig(filename=f'{original_function.__name__}.log', level=logging.INFO)
-
-  @wraps(original_function)
-  def wrapper(*args, **kwargs):
-    logging.info(f'Ran with args: {args}, and {kwargs}')
-    return original_function(*args, **kwargs)
-  return wrapper
-
-
-def my_timer(original_function):
-  import time
-
-  @wraps(original_function)
-  def wrapper(*args, **kwargs):
-    t1 = time.time()
-    result = original_function(*args, **kwargs)
-    t2 = time.time() - t1
-    print(f'{original_function.__name__} ran in : {t2} seconds.')
-    return result
-  return wrapper
-
-
-import time
-
-
-@my_logger
-@my_timer
-def display(echipa, trofee):
-  time.sleep(1)
-  print(f'Display ran with arguments {echipa}, {trofee}')
-
-
-display('Manchester', 20)
-from datetime import datetime
-
-bday = datetime(1994, 4, 19)
-print(f'My bday is on {bday:%B %d, %Y}')  # My bday is on April 19, 1994
-pi = 3.14159265
-print(f'pi este {pi:.3f}')
-import sqlite3
-
-# Class to create employees
-
-
-class Employee:
-
-  def __init__(self, first, last, pay):
-    self.first = first
-    self.last = last
-    self.pay = pay
-
-  @property
-  def email(self):
-    return f'{self.first}.{self.last}@email.com'
-
-  @property
-  def fullname(self):
-    return f'{self.first} {self.last}'
-
-  def __repr__(self):
-    return f"Employee ('{self.first}','{self.last}', {self.pay})"
-
-
-# Connection to a datebase (file or memory)
-conn = sqlite3.connect(':memory:')
-c = conn.cursor()
-# Creation of a table "employees"
-c.execute("""CREATE TABLE employees (
-            first text,
-            last text,
-            pay integer
-            )""")
-
-# creation of 3 functions: insertion, get employee by name, update salary and remove employee
-
-
-def insert_emp(emp):
-  with conn:
-    c.execute(f"INSERT INTO employees VALUES (?, ?, ?)", (emp.first, emp.last, emp.pay))
-
-
-def get_emp_by_name(lastname):
-  c.execute("SELECT * FROM employees WHERE last=:last", {"last": lastname})
-  return c.fetchall()
-
-
-def update_pay(emp, pay):
-  with conn:
-    c.execute("""UPDATE employees SET pay = :pay
-                    WHERE first =:first AND last = :last""",
-              {'first': emp.first, 'last': emp.last, 'pay': pay})
-
-
-def remove_emp(emp):
-  with conn:
-    c.execute("DELETE FROM employees WHERE first=:first AND last=:last", {
-              "first": emp.first, 'last': emp.last})
-
-
-# Creation of 2 employee objects
-emp_1 = Employee('Marian', "POPA", 45000)
-emp_2 = Employee('Mara', "POPA", 35000)
-
-# Insertion into the database
-insert_emp(emp_1)
-insert_emp(emp_2)
-# printing
-emps = get_emp_by_name('POPA')
-print(emps)
-
-# update one salary and remove one employee
-update_pay(emp_2, 99999)
-remove_emp(emp_1)
-emps = get_emp_by_name('POPA')
-print(emps)
-conn.close()
-import pandas as pd
-df = pd.read_csv('pokemon_data.csv', delimiter=',', chunksize=5)
-"print(df.tail(10))
-#                 Name   Type 1  ... Speed  Generation  Legendary
-797  720  HoopaHoopa Confined  Psychic  ...    70           6       True
-798  720   HoopaHoopa Unbound  Psychic  ...    80           6       True
-799  721            Volcanion     Fire  ...    70           6       True"
-"print(df.columns)  # to print the header
-Index(['#', 'Name', 'Type 1', 'Type 2', 'HP', 'Attack', 'Defense', 'Sp. Atk',
-       'Sp. Def', 'Speed', 'Generation', 'Legendary'],
-      dtype='object')"
-"print(df['Name'][0:5])  # to print all the value of a column
-0                Bulbasaur
-1                  Ivysaur
-2                 Venusaur
-3    VenusaurMega Venusaur
-4               Charmander
-Name: Name, dtype: object"
-"print(df[['Name', 'Type 1', 'HP']])  # to print all the value of a column
-  Name   Type 1  HP
-0                Bulbasaur    Grass  45
-1                  Ivysaur    Grass  60
-2                 Venusaur    Grass  80
-3    VenusaurMega Venusaur    Grass  80
-4               Charmander     Fire  39
-..                     ...      ...  ..
-795                Diancie     Rock  50
-796    DiancieMega Diancie     Rock  50
-797    HoopaHoopa Confined  Psychic  80
-798     HoopaHoopa Unbound  Psychic  80
-799              Volcanion     Fire  80"
-"print(df.iloc[1:4])
-#      Name Type 1  Type 2  ...  Sp. Def  Speed  Generation  Legendary
-1  2   Ivysaur  Grass  Poison  ...       80     60           1      False
-2  3  Venusaur  Grass  Poison  ...      100     80           1      False"
-"print(df.iloc[2, 1])
-Venusaur"
-for index, row in df.iterrows():
-" print(index, row['Name'], row['HP'], row['Attack'])
-0 Bulbasaur 45 49
-1 Ivysaur 60 62
-2 Venusaur 80 82
-3 VenusaurMega Venusaur 80 100"
-"print(df.loc[df['Type 1'] == 'Fire'])
-#                       Name Type 1  ... Speed  Generation  Legendary
-4      4                 Charmander   Fire  ...    65           1      False
-5      5                 Charmeleon   Fire  ...    80           1      False"
-"print(df.describe())
-#          HP      Attack  ...     Sp. Def       Speed  Generation
-count  800.000000  800.000000  800.000000  ...  800.000000  800.000000   800.00000
-mean   362.813750   69.258750   79.001250  ...   71.902500   68.277500     3.32375
-std    208.343798   25.534669   32.457366  ...   27.828916   29.060474     1.66129
-min      1.000000    1.000000    5.000000  ...   20.000000    5.000000     1.00000
-25 % 184.750000   50.000000   55.000000  ...   50.000000   45.000000     2.00000
-50 % 364.500000   65.000000   75.000000  ...   70.000000   65.000000     3.00000
-75 % 539.250000   80.000000  100.000000  ...   90.000000   90.000000     5.00000
-max    721.000000  255.000000  190.000000  ...  230.000000  180.000000     6.00000"
-"print(df.sort_values(['Type 1', 'Speed'], ascending=(0, 0)))
-#                  Name Type 1  ... Speed  Generation  Legendary
-726  658              Greninja  Water  ...   122           6      False
-130  121               Starmie  Water  ...   115           1      False
-466  419              Floatzel  Water  ...   115           4      False"
-df['Total'] = df['HP'] + df['Attack'] + df['Defense'] + df['Sp. Atk'] + \
-    df['Sp. Def'] + df['Speed']
-df['Total'] = df.iloc[:, 4:10].sum(axis=1)
-df = df.drop(columns=['Total'])
-df['Total'] = df.iloc[:, 4:10].sum(axis=1)
-columns = list(df.columns.values)
-df = df[columns[0:4] + [columns[-1]] + columns[4:12]]
-"print(df.head(5))
-#                   Name Type 1  ... Speed  Generation  Legendary
-0  1              Bulbasaur  Grass  ...    45           1      False
-1  2                Ivysaur  Grass  ...    60           1      False
-2  3               Venusaur  Grass  ...    80           1      False"
-df.to_csv('modified.csv', index=False)  # csv
-df.to_csv('modified.txt', index=False, sep='\t')  # txt
-"print(df.loc[(df['Type 1'] == 'Grass') & (df['Type 2'] == 'Poison') & (df['HP'] > 70)])
-#                   Name Type 1  ... Speed  Generation  Legendary
-2      3               Venusaur  Grass  ...    80           1      False
-3      3  VenusaurMega Venusaur  Grass  ...    80           1      False
-50    45              Vileplume  Grass  ...    50           1      False
-77    71             Victreebel  Grass  ...    70           1      False
-652  591              Amoonguss  Grass  ...    30           5      False"
-new_df = new_df.reset_index(drop=True)
-new_df.reset_index(drop=True, inplace=True)
-"print(df.loc[(df['Name'].str.contains('Mega'))])
-#                       Name    Type 1  ... Speed  Generation  Legendary
-3      3      VenusaurMega Venusaur     Grass  ...    80           1      False
-7      6  CharizardMega Charizard X      Fire  ...   100           1      False
-8      6  CharizardMega Charizard Y      Fire  ...   100           1      False"
-"print(df.loc[~df['Name'].str.contains('Mega')])
-#                 Name   Type 1  ... Speed  Generation  Legendary
-0      1            Bulbasaur    Grass  ...    45           1      False
-1      2              Ivysaur    Grass  ...    60           1      False
-2      3             Venusaur    Grass  ...    80           1      False"
-"print(df.loc[df['Type 1'].str.contains('fire|grass', flags=re.I, regex=True)])
-#                   Name Type 1  ... Speed  Generation  Legendary
-0      1              Bulbasaur  Grass  ...    45           1      False
-1      2                Ivysaur  Grass  ...    60           1      False
-2      3               Venusaur  Grass  ...    80           1      False"
-re.I  # Ignore case
-"df.loc[df['Type 1'] == 'Fire', 'Type 1'] = 'Flamer'
-#                   Name   Type 1  ... Speed  Generation  Legendary
-0      1              Bulbasaur    Grass  ...    45           1      False
-1      2                Ivysaur    Grass  ...    60           1      False
-2      3               Venusaur    Grass  ...    80           1      False
-3      3  VenusaurMega Venusaur    Grass  ...    80           1      False
-4      4             Charmander   Flamer  ...    65           1      False"
-"df.loc[df['Total'] > 500, ['Generation', 'Legendary']] = ['TEST VALUE', 'EHHE']
-#                   Name   Type 1  ... Speed  Generation  Legendary
-0      1              Bulbasaur    Grass  ...    45           1      False
-1      2                Ivysaur    Grass  ...    60           1      False
-2      3               Venusaur    Grass  ...    80  TEST VALUE       EHHE
-3      3  VenusaurMega Venusaur    Grass  ...    80  TEST VALUE       EHHE"
-# .mean/.sum/.count
-"print(df.groupby(['Type 1']).mean().sort_values('Defense', ascending=False))
-#       Total         HP  ...       Speed  Generation  Legendary
-Type 1                                       ...
-Steel     442.851852  487.703704  65.222222  ...   55.259259    3.851852   0.148148
-Rock      392.727273  453.750000  65.363636  ...   55.909091    3.454545   0.090909
-Dragon    474.375000  550.531250  83.312500  ...   83.031250    3.875000   0.375000"
-df['Count'] = 1
-"print(df.groupby(['Type 1', 'Type 2']).count()['Count'])
-Type 1  Type 2
-Bug     Electric     2
-  Fighting     2
-  Fire         2
-  Flying      14
-  Ghost        1
-    ..
-Water   Ice          3
-  Poison       3
-  Psychic      5
-  Rock         4
-  Steel        1"
-for df in pd.read_csv('pokemon_data.csv', chunksize=5):
-import numpy as np
-
-a = np.array([(1, 2, 3), (4, 5, 6)])
-print(a)
-s = range(1000)
-print(sys.getsizeof(5) * len(s))  # 14000
-d = np.arange(1000)
-print(d.size * d.itemsize)  # 4000
-import numpy as np
-import time
-
-l1 = range(1000000)
-l2 = range(1000000)
-a1 = np.arange(1000000)
-a2 = np.arange(1000000)
-
-start = time.time()
-result = [(x, y) for x, y in zip(l1, l2)]
-print((time.time() - start) * 1000)  # 310.00423431396484
-
-start = time.time()
-result = a1 + a2
-print((time.time() - start) * 1000)  # 65.00744819641113
-a = np.array([(1, 2, 3), ('a', 32, 3)])
-print(a.ndim)
-print(a.itemsize)
-print(a.dtype)
-print(a.size)
-print(a.shape)
-print(a.reshape(6, 1))
-a = np.array([(1, 2, 3, 4, 5),
-              ('a', 'b', 'c', 'd', 'e'),
-              (11, 22, 33, 44, 55),
-              ('A', ' B', 'C', 'D', 'E'),
-              (6, 7, 8, 9, 0),
-              ('aa', 'bb', 'cc', 'dd', 'ee')])
-"print(a[1:3, 2:4])
-[['c' 'd']
- ['33' '44']]"
-a = np.linspace(0, 10, 6)
-print(a)  # [ 0.  2.  4.  6.  8. 10.]
-print(a.max())
-print(a.sum())
-a = np.array([(1, 2, 3, 4, 5),
-              (11, 22, 33, 44, 55),
-              (6, 7, 8, 9, 0)])
-
-"print(a.sum(axis=0))
-[18 31 44 57 60]"
-"print(a.sum(axis=1))
-[15 165  30]"
-"print(np.sqrt(a))
-[[1.         1.41421356 1.73205081 2.         2.23606798]
- [3.31662479 4.69041576 5.74456265 6.63324958 7.41619849]
- [2.44948974 2.64575131 2.82842712 3.         0.]]"
-"print(np.std(a))
-16.32993161855452"
-a = np.array([(4, 4, 4),
-              (3, 2, 1)])
-b = np.array([(2, 2, 3),
-              (3, 2, 1)])
-
-"print(a - b)
-[[2 2 1]
- [0 0 0]]"
-print(np.vstack((a, b)))
-print(np.hstack((a, b)))
-a = np.array([(4, 4, 4),
-              (3, 2, 1)])
-"print(a.ravel())
-[4 4 4 3 2 1]"
-x = np.arange(0, 3 * np.pi, 0.1)
-y = np.sin(x)
-y = np.cos(x)
-ar = np.array([1, 2, 3])
-"print(np.exp(ar))
-[2.71828183  7.3890561  20.08553692]"
-"print(np.log10(ar))
-[0.         0.30103    0.47712125]"
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-print(arr[arr % 2 == 1])  # [1 3 5 7 9]
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-arr[arr % 2 == 1] = -1
-print(arr)  # [-1  2 -1  4 -1  6 -1  8 -1]
-a = np.arange(10)
-b = np.where(a % 2 == 0, -1, a)
-print(b)  # [-1  1 -1  3 -1  5 -1  7 -1  9]
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-b = np.reshape(arr, (2, -1))
-print(b)
-# [[ 1  2  3  4  5]
-#  [ 6  7  8  9 10]]
-a = np.arange(10).reshape(2, -1)
-b = np.repeat(1, 10).reshape(2, -1)
-c = np.vstack([a, b])  # hstack
-c = np.concatenate([a, b], axis=1)  # axis=0
-c = np.r_[a, b]  # c_[a, b]
-print(c)
-a = np.array([1, 2, 3])
-b = np.r_[np.repeat(a, 3), np.tile(a, 3)]
-print(b)  # [1 1 1 2 2 2 3 3 3 1 2 3 1 2 3 1 2 3]
-a = np.array([1, 2, 3, 2, 3, 4, 3, 4, 5, 6])
-b = np.array([7, 2, 10, 2, 7, 4, 9, 4, 9, 8])
-print(np.intersect1d(a, b))  # [2 4]
-a = np.array([1, 2, 3, 3])
-b = np.array([3, 4, 5])
-print(np.setdiff1d(a, b))  # [1 2]
-a = np.array([1, 2, 3, 3, 6, 7])
-b = np.array([3, 4, 5, 3, 4, 7])
-print(np.where(a == b))  # (array([3, 5]),)
-a = np.array([2, 6, 1, 9, 10, 3, 27])
-index = np.where((a >= 5) & (a <= 10))
-print(a[index])  # [ 6  9 10]
-print(a[(a >= 5) & (a <= 10)])  # [ 6  9 10]
-a = np.array([5, 7, 9, 8, 6, 4, 5])
-b = np.array([6, 3, 4, 8, 9, 7, 1])
-
-
-def ceva(x, y):
-  return x * 10 + y
-
-
-pair_max = np.vectorize(ceva)
-print(pair_max(a, b))  # [56 73 94 88 69 47 51]
-a = np.arange(9).reshape((3, 3))
-print(a[:, [1, 0, 2]])
-print(a[[1, 0, 2], :])
-a = np.arange(9).reshape((3, 3))
-print(a[::-1])
-a = np.arange(9).reshape((3, 3))
-print(a[:, ::-1])
+colors = ['Red', 'Black', 'Green']
+roulette = random.choices(colors, weights=[18, 18, 2], k=5)
+print(roulette)  # ['Red', 'Black', 'Black', 'Red', 'Black']
+##################################################################################

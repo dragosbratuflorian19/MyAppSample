@@ -10,6 +10,7 @@
 1.1 General: Print (5, 5) as 0005 5.00000
 1.1 General: Print (#, 8) as ___#________*
 1.1 General: Print 1____10 2___100 3__1000 4_10000
+1.1 General: Create a nice table
 1.1 General: Print with % (string and digit)
 1.1 General: Use enumerate function
 1.1 General: Use zip function
@@ -18,27 +19,24 @@
 1.1 General: Use filter
 1.1 General: Use lambda
 1.1 General: Use polymorphism
-1.1 General: Create a class with dunder __str__, __len__, __del__ 
+1.1 General: Use the next magic functions within a class: __str__, __len__, __del__ 
 1.1 General: Use __name__ __ main__ functions
 1.1 General: Run a UNITTEST
-1.1 General: Create a decorator (logging in)
+1.1 General: Create a decorator
 1.1 General: Create a generator
 1.1 General: Make a string iterable
 1.1 General: Use pdb module to debug
 1.1 General: Do one thing two ways and time it
+1.1 General: Use time module to make a count down
+1.1 General: Use RJust, Ljust
 1.1 General: Write a number as binary, hexa, and octa
-1.1 General: Print all the different elements between two sets
-1.1 General: Print all common elements between two sets
 1.1 General: Create a comprehensive dictionary
 1.1 General: Print the orders of A, F and z characters
 1.1 General: Create a comprehensive dictionary
-1.1 General: Use else statement with while
 1.1 General: Print a number as 3e2
-1.1 General: Write CMMDC algorithm
 1.1 General: Write prime numbers algorithm ( one liner ! )
-1.1 General: Use any and all with sets
 1.1 General: Unpack 7 values but use only the 3 values from the middle
-1.1 General: Create __add__ and __mul__ functions
+1.1 General: Create __add__ and __mul__ functions to make operations on objects
 1.1 General: Create __gt__ and __lt__  and __eq__ functions
 1.1 General: Add two dictionaries
 1.1 General: One liner generator
