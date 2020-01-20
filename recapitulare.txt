@@ -105,23 +105,33 @@
 1.7 Random: Roulette: black has 18, red has 18, green has 2, print 5 trials
 1.7 Regex: Search for begining and end of a word character
 1.7 Regex: Search for digits, characters
-2. SQL Order some elements from a table and print distinct rows
-2. SQL Make multiple filtering using LIKE
-2. SQL Create REGEXP function and use it
-2. SQL Select rows when a collumn is null
-2. SQL Multiple ordering
-2. SQL Make operations on and use AS
-2. SQL Use SELECT and show only 7 values, skiping the first 5
-2. SQL Join 2 tables
-2. SQL Make a subquery using IN
-2. SQL Copy a table
-2. SQL Insert multiple records in a table
-2. SQL Make a cross join
-2. SQL Make a union of querries
-2. SQL Make a natural join
-2. SQL Join 2 table with same column using 'using'
-2. SQL Make an outer join
-2. SQL Join 3 tables
+2. SQL: Drop a database in case it exists
+2. SQL: Create a database
+2. SQL: Use a database
+2. SQL: Create a table with next column types: autoincrementing index, text(2 types), int(2 types), date, decimal with 3 decimals, make a primary key also
+2. SQL: Insert into a table
+2. SQL: Create a foreign key
+2. SQL: Use select, where and order by statements
+2. SQL: Create a new column with alias
+2. SQL: Select unique rows
+2. SQL: Make a multiple filtering using And and Or
+2. SQL: Use Where with In
+2. SQL: Use Where with Between
+2. SQL: Use Where with Like (search for begining pattern, end pattern, begining and end pattern)
+2. SQL: Make multiple ordering
+2. SQL: Skip first 5 rows and select the other 4
+2. SQL: Join 2 tables
+2. SQL: Select rows when a collumn is null
+2. SQL: Make a self join
+2. SQL: Copy a table
+2. SQL: Insert multiple records in a table
+2. SQL: Make a subquery
+2. SQL: Make a cross join
+2. SQL: Make a union of querries
+2. SQL: Make a natural join
+2. SQL: Join 2 table with same column using 'using'
+2. SQL: Make an outer join
+2. SQL: Join 3 tables
 3. SPARK: Create the main entry point to the spark functionality
 3. SPARK: Load a file as a RDD
 3. SPARK: Load a file as a RDD using inside range function
