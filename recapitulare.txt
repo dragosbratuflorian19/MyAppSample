@@ -108,11 +108,14 @@
 2. SQL: Drop a database in case it exists
 2. SQL: Create a database
 2. SQL: Use a database
-2. SQL: Create a table with next column types: autoincrementing index, text(2 types), int(2 types), date, decimal with 3 decimals, make a primary key also
+2. SQL: Create a table with next column types: autoincrementing index, text(2 types), int(2 types), date, not null and unique, decimal with 3 decimals, make a primary key also
 2. SQL: Insert into a table
+2. SQL: Delete a table
 2. SQL: Create a foreign key
+2. SQL: Add and delete a column
 2. SQL: Use select, where and order by statements
 2. SQL: Create a new column with alias
+2. SQL: Update 2 columns with 2 filters
 2. SQL: Select unique rows
 2. SQL: Make a multiple filtering using And and Or
 2. SQL: Use Where with In
