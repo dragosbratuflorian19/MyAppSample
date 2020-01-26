@@ -16,7 +16,8 @@ def create_rec_file(filename):
     lista_subiecte = []
     for i in content:
         lista_subiecte.append(i.strip())
-    random.shuffle(lista_subiecte)
+    lista_subiecte = lista_subiecte[::-1]
+    # random.shuffle(lista_subiecte)
     with open(filename, 'w') as f:
         for i in lista_subiecte:
             f.write(i + '\n')

@@ -1,208 +1,215 @@
-3. SPARK: Keeps a RDD in memory for repeated actions
-3. SPARK: Enter in Spark visualizer
-2. SQL: Use a database
-2. SQL: Make a self join
-1.2 Pandas: Read a .csv file, print it's columns
-6. GIT: Remove an added file from the index
-1.7 Collections: Create a default dictionary
-1.1 General: Sort 2 objects
-3. SPARK: Return a new RDD containing only the elements that satisfy a predicate.
-1.1 General: Print a number as 3e2
-1.2 Pandas: Read a .csv file, print it's tail, head and shape
-1.1 General: Use super from classes
-1.1 General: Use filter
-8. LINUX: Change the directory, go back
-1.2 Pandas: Read a .csv file, use multiple filtering using REGEX
-1.1 General: Print (5, 5) as 0005 5.00000
-8. LINUX: List the files in directory
-1.2 Pandas: Join two dataframes
-1.1 General: Use zip function
-1.1 General: Create a function with args and kwargs
-1.2 Pandas: Read a .csv file in chunks (iterative)
-3. SPARK: Return the first element of a RDD.
-1.1 General: Create a comprehensive dictionary
-3. SPARK: Load a file as a RDD using inside range function
-2. SQL: Create a new column with alias
-1.2 Pandas: Read a .csv file, use loc and iloc
-1.1 General: Joining elements of a list with a special character
-1.3 Numpy: Create an 2x3 array and make it all by one row
-1.1 General: Print with % (string and digit)
-6. GIT: Initialize a local git repository
-8. LINUX: Show how much space uses some files
-8. LINUX: Copy a file in another directory
-2. SQL: Join 2 table with same column using 'using'
-1.2 Pandas: Read a .csv file, rename one column
-1.2 Pandas: Read a .csv file, view 3 columns
-1.2 Pandas: Read a .csv file, fill the NA cells with one value
-1.1 General: Create and and delete one folder
-2. SQL: Make a multiple filtering using And and Or
-6. GIT: How to escape from editing comment
-1.7 Regex: Search for begining and end of a word character
-8. LINUX: Show the network status
-8. LINUX: See last 100 lines
-1.1 General: Print (#, 8) as ___#________*
-1.1 General: Print 'a','b','c' separated by #
-8. LINUX: Checks the connection with a url
-2. SQL: Make a subquery
-1.1 General: Use pdb module to debug
-1.7 OS: Change directory, remove one directory, use walk to print all the files
-1.2 Pandas: Read a .csv file, filter by one column name
-1.1 General: Create a decorator
-8. LINUX: Rename a file
-1.2 Pandas: Read a .csv file, save the new csv
-1.2 Pandas: Read a .csv file, view one single column 2 ways
-3. SPARK: Return a list that contains all of the elements of a RDD.
-1.1 General: Round 234.214 as : 230.0 and 234.21
-8. LINUX: Check network interface
-8. LINUX: Move a file
-1.1 General: Display all .txt files from one folder
-1.7 Random: Print a random value between 15 and 19
-8. LINUX: Make a directory
-8. LINUX: Concatenate to a file using cat
-1.2 Pandas: Read a .csv file, sort 2 columns
-1.7 Regex: Search for digits, characters
-1.2 Pandas: Read a .csv file, create a column
-1.3 Numpy: Create an array, using an interval and  [0, 10] and print 6 values between
-8. LINUX: Make multiple directories
-8. LINUX: Checks the permissions
-8. LINUX: List all processes
-6. GIT: Create a ignoring file and check if it works
-8. LINUX: Find a file in a directory
-1.2 Pandas: Read a .csv file, delete one column
-1.2 Pandas: Read a .csv file, make correlations between 3 columns
-3. SPARK: Running the spark job
-1.1 General: Use __name__ __ main__ functions
-8. LINUX: Create a file using cat
-1.2 Pandas: Read a .csv file, view one particular cell
-2. SQL: Copy a table
-3. SPARK: Return a new RDD containing the distinct elements in this RDD.
-2. SQL: Create a table with next column types: autoincrementing index, text(2 types), int(2 types), date, decimal with 3 decimals, make a primary key also
-1.2 Pandas: Concatenate two dataframes
-8. LINUX: Show all users currently on the server
-8. LINUX: Redo a command using numbers from history
-3. SPARK: Return samples of a RDD ( 2 ways, elements that can be re-chosen)
-1.2 Pandas: Create a dataframe from a dictionary
-3. SPARK: Return all possible pairs of 2 RDDs
-3. SPARK: Return the number of elements in this RDD.
-1.1 General: Create __gt__ and __lt__  and __eq__ functions
-6. GIT: Create and switch to another branch, then merge them
-1.6 SQLite3: Create a database, a table and the columns
-2. SQL: Use Where with Like (search for begining pattern, end pattern, begining and end pattern)
-1.7 Collections: Create an ordered dictionary
-1.1 General: Create __add__ and __mul__ functions to make operations on objects
-3. SPARK: Return a new RDD by first applying a function to all elements of this RDD, and then flattening the results.
-2. SQL: Make a union of querries
-1.1 General: Make a string iterable
-8. LINUX: Making shortcuts using alias
-2. SQL: Use select, where and order by statements
-8. LINUX: Remove a folder with a file inside
-1.1 General: Print 1____10 2___100 3__1000 4_10000
-8. LINUX: Show the free space
-2. SQL: Drop a database in case it exists
-2. SQL: Make a natural join
-8. LINUX: See content of a file in real time
-1.1 General: Getting an item from a dictionary without the program yelling at us if it doesn't exist
-6. GIT: Clone a repository
-2. SQL: Make an outer join
-1.1 General: Use enumerate function
-9. SKLEARN: Classify some SVM
 9. SKLEARN: Group some data using Mean Shift
-3. SPARK: Load a file as a RDD
-9. SKLEARN: Make a prediction using linear regression
-1.1 General: Use lambda
-2. SQL: Create a foreign key
 9. SKLEARN: Group some data using kMeans
-1.2 Pandas: Read a .csv file, reset the index ( 2 ways, inplace)
-1.3 Numpy: Create an array and swap it's collumns and rows
-3. SPARK: Create the main entry point to the spark functionality
-1.7 Collections: Create a dictionary with letters count
-1.3 Numpy: Create an array and print it's max and sum ( total sum, sum for two axis)
-2. SQL: Skip first 5 rows and select the other 4
-8. LINUX: Give the execution right (two ways)
-1.1 General: Open big files in chunks
-6. GIT: Push to a remote repository
-1.1 General: Create a generator
-2. SQL: Join 3 tables
-1.1 General: Use the next magic functions within a class: __str__, __len__, __del__
-1.2 Pandas: Read a .csv file, use multiple filtering
-3. SPARK: Save the rdd to another file
-1.3 Numpy: Create a function which takes x and y and makes it x*3+y*2 and apply it on two arrays
-1.1 General: Write a number as binary, hexa, and octa
-8. LINUX: List all processes page by page
-3. SPARK: Enter in Spark shell
-1.7 Datetime: Create a date, get today's date
-1.2 Pandas: Create a series from a list
-1.1 General: Use time module to make a count down
-1.3 Numpy: Create an array and filter it's odd values
-2. SQL: Select unique rows
-1.2 Pandas: Read a .csv file, convert the type of one column
-1.1 General: Create a comprehensive dictionary
-8. LINUX: Print working directory
-2. SQL: Use Where with In
-1.3 Numpy: Create 2 arrays and stack them h and v ( 3 methods)
-1.1 General: Do one thing two ways and time it
-1.6 SQLite3: Use SELECT, INSERT, DELETE and UPDATE
-8. LINUX: Remove a file
-1.2 Pandas: Read a .csv file, iterate through rows
-8. LINUX: Make a directory in a particular destination
-1.3 Numpy: Create an array and use where
-1.1 General: Print the orders of A, F and z characters
-8. LINUX: Network connections and status of sockets
-1.1 General: Create a nice table
-1.3 Numpy: Print the common and the different elements between 2 arrays
-1.7 Random: Roulette: black has 18, red has 18, green has 2, print 5 trials
-1.2 Pandas: Read a .csv file, print the mean/min/max/median/std
-1.3 Numpy: Create an array, print it's dimentsion, itemsize, type, size, shape
-8. LINUX: List the opened files
-2. SQL: Insert into a table
-1.3 Numpy: Create an array and print it's square root, standard deviation
-8. LINUX: Change the directory, go to the root directory
-1.1 General: Create 2 classes (inheritance)
-1.3 Numpy: Create an array and use Tile
-1.1 General: Add two dictionaries
-1.2 Pandas: Read a .csv file, view particular rows
-1.1 General: One liner generator
-1.1 General: Write prime numbers algorithm ( one liner ! )
-2. SQL: Use Where with Between
+9. SKLEARN: Classify some SVM
 9. SKLEARN: Classify some data using k-NN
-1.2 Pandas: Read a .csv file, create a new column which counts the types
-1.2 Pandas: Create a dataframe from a list
-1.1 General: Using argv
-8. LINUX: Change the directory
-8. LINUX: Change the directory, go previous
-8. LINUX: Copy a file in the same directory
-8. LINUX: View a file using cat
-1.1 General: Use polymorphism
-1.2 Pandas: Create a dataframe from a 1.3 Numpy array
-1.7 Collections: Create a named tuple
-2. SQL: Select rows when a collumn is null
+9. SKLEARN: Make a prediction using linear regression
 8. LINUX: Locate a file
-1.3 Numpy: Create an array and print it's exponential and logaritmic values
-6. GIT: Add files to the index (two ways to add all the files)
-3. SPARK: Take the first num elements of the RDD.
-2. SQL: Create a database
-1.1 General: Unpack 7 values but use only the 3 values from the middle
-1.2 Pandas: Create a dataframe from a series
-1.2 Pandas: Create a series from a list and change the indexing to a, b, c, d
-6. GIT: Pull from a repository
-8. LINUX: List all the files in subdirectories
-1.2 Pandas: Read a .csv file, create a column with lambda function
-2. SQL: Insert multiple records in a table
-1.2 Pandas: Read a .csv file, change the value of on column ( napoli -> steaua)
-1.1 General: Use map
-8. LINUX: Remove a directory
-2. SQL: Make multiple ordering
-1.1 General: Use RJust, Ljust
-1.1 General: Run a UNITTEST
+8. LINUX: Making shortcuts using alias
+8. LINUX: Show all users currently on the server
 8. LINUX: Restart your pc
-8. LINUX: Show history
-1.3 Numpy: Create an array and reverse it's collumns and rows
-3. SPARK: Return the union of this RDD and another one.
-1.2 Pandas: Read a .csv file, group the elements by one column, sorted by another column, mean values
+8. LINUX: Check network interface
+8. LINUX: Find a file in a directory
 8. LINUX: Check the internet connectivity
+8. LINUX: Redo a command using numbers from history
+8. LINUX: Show history
+8. LINUX: Give the execution right (two ways)
+8. LINUX: Show how much space uses some files
+8. LINUX: Show the free space
+8. LINUX: List the opened files
+8. LINUX: Network connections and status of sockets
+8. LINUX: Show the network status
+8. LINUX: List all processes page by page
+8. LINUX: List all processes
+8. LINUX: See last 100 lines
+8. LINUX: See content of a file in real time
+8. LINUX: Checks the connection with a url
+8. LINUX: Rename a file
+8. LINUX: Move a file
+8. LINUX: View a file using cat
+8. LINUX: Concatenate to a file using cat
+8. LINUX: Create a file using cat
+8. LINUX: Remove a folder with a file inside
+8. LINUX: Remove a file
+8. LINUX: Copy a file in another directory
+8. LINUX: Copy a file in the same directory
+8. LINUX: Print working directory
+8. LINUX: Checks the permissions
+8. LINUX: List all the files in subdirectories
+8. LINUX: List the files in directory
+8. LINUX: Change the directory, go to the root directory
+8. LINUX: Change the directory, go previous
+8. LINUX: Change the directory, go back
+8. LINUX: Change the directory
+8. LINUX: Remove a directory
+8. LINUX: Make multiple directories
+8. LINUX: Make a directory in a particular destination
+8. LINUX: Make a directory
+6. GIT: How to escape from editing comment
+6. GIT: Create and switch to another branch, then merge them
+6. GIT: Create a ignoring file and check if it works
+6. GIT: Clone a repository
+6. GIT: Pull from a repository
+6. GIT: Push to a remote repository
 6. GIT: Commit without edditing the comment
-1.7 Datetime: Print the date like: My bday is on April 19, 1994
-2. SQL: Join 2 tables
-1.2 Pandas: Merge two dataframes
+6. GIT: Remove an added file from the index
+6. GIT: Add files to the index (two ways to add all the files)
+6. GIT: Initialize a local git repository
+3. SPARK: Enter in Spark shell
+3. SPARK: Enter in Spark visualizer
+3. SPARK: Running the spark job
+3. SPARK: Keeps a RDD in memory for repeated actions
+3. SPARK: Save the rdd to another file
+3. SPARK: Return all possible pairs of 2 RDDs
+3. SPARK: Return samples of a RDD ( 2 ways, elements that can be re-chosen)
+3. SPARK: Return the union of this RDD and another one.
+3. SPARK: Return a new RDD by first applying a function to all elements of this RDD, and then flattening the results.
+3. SPARK: Return a new RDD containing only the elements that satisfy a predicate.
+3. SPARK: Return a new RDD containing the distinct elements in this RDD.
+3. SPARK: Return the number of elements in this RDD.
+3. SPARK: Take the first num elements of the RDD.
+3. SPARK: Return the first element of a RDD.
+3. SPARK: Return a list that contains all of the elements of a RDD.
+3. SPARK: Load a file as a RDD using inside range function
+3. SPARK: Load a file as a RDD
+3. SPARK: Create the main entry point to the spark functionality
 2. SQL: Make a cross join
+2. SQL: Make an outer join
+2. SQL: MAke a join using USING
+2. SQL: Make a natural join
+2. SQL: Make 2 joins
+2. SQL: Create a subquery
+2. SQL: Join 2 tables
+2. SQL: Use like with end , middle and beginning of a word
+2. SQL: Make an union of selections
+2. SQL: See first 5 rows, skip first 2
+2. SQL: SELECT: Make multiple ordering
+2. SQL: SELECT: Make filtering LIKE
+2. SQL: SELECT: Make filtering BETWEEN
+2. SQL: SELECT: Make filtering using IN
+2. SQL: Select: make multiple filtering
+2. SQL: Group a column and count it
+2. SQL: See the sum of a column
+2. SQL: See the average of a column
+2. SQL: Count all the rows
+2. SQL: See how many unique values are inside a column
+2. SQL: Select one new column as alias
+2. SQL: Use select, where and order by
+2. SQL: Copy a table
+2. SQL: Delete a row
+2. SQL: Update some values inside a table
+2. SQL: Create a foreigh key ( 2 types on delete)
+2. SQL: Make multiple insertions into a table
+2. SQL: insert into a table
+2. SQL: Add and delete a column
+2. SQL: Delete a table
+2. SQL: Create a table with the next properties: autoincrement, not null, default, unique, int(2 types), string(2 types), date, decimal, and set a primary key 2 variants
+2. SQL: Drop a database if it exists, after create one, and use it.
+2. SQL: How do you change the password?
+2. SQL: How do you start the mysql shell?
+1.7 Regex: Search for digits, characters
+1.7 Regex: Search for begining and end of a word character
+1.7 Random: Roulette: black has 18, red has 18, green has 2, print 5 trials
+1.7 Random: Print a random value between 15 and 19
+1.7 OS: Change directory, remove one directory, use walk to print all the files
+1.7 Datetime: Print the date like: My bday is on April 19, 1994
+1.7 Datetime: Create a date, get today's date
+1.7 Collections: Create a named tuple
+1.7 Collections: Create an ordered dictionary
+1.7 Collections: Create a default dictionary
+1.7 Collections: Create a dictionary with letters count
+1.6 SQLite3: Use SELECT, INSERT, DELETE and UPDATE
+1.6 SQLite3: Create a database, a table and the columns
+1.3 Numpy: Create an array and reverse it's collumns and rows
+1.3 Numpy: Create an array and swap it's collumns and rows
+1.3 Numpy: Create a function which takes x and y and makes it x*3+y*2 and apply it on two arrays
+1.3 Numpy: Create an array and use where
+1.3 Numpy: Print the common and the different elements between 2 arrays
+1.3 Numpy: Create an array and use Tile
+1.3 Numpy: Create an array and filter it's odd values
+1.3 Numpy: Create an array and print it's exponential and logaritmic values
+1.3 Numpy: Create an 2x3 array and make it all by one row
+1.3 Numpy: Create 2 arrays and stack them h and v ( 3 methods)
+1.3 Numpy: Create an array and print it's square root, standard deviation
+1.3 Numpy: Create an array and print it's max and sum ( total sum, sum for two axis)
+1.3 Numpy: Create an array, using an interval and  [0, 10] and print 6 values between
 1.3 Numpy: Create an array, reshape it, slice it ( print only the middle)
+1.3 Numpy: Create an array, print it's dimentsion, itemsize, type, size, shape
+1.2 Pandas: Read a .csv file in chunks (iterative)
+1.2 Pandas: Read a .csv file, create a new column which counts the types
+1.2 Pandas: Read a .csv file, group the elements by one column, sorted by another column, mean values
+1.2 Pandas: Read a .csv file, change the value of on column ( napoli -> steaua)
+1.2 Pandas: Read a .csv file, reset the index ( 2 ways, inplace)
+1.2 Pandas: Read a .csv file, save the new csv
+1.2 Pandas: Read a .csv file, use multiple filtering using REGEX
+1.2 Pandas: Read a .csv file, use multiple filtering
+1.2 Pandas: Read a .csv file, sort 2 columns
+1.2 Pandas: Read a .csv file, create a column with lambda function
+1.2 Pandas: Read a .csv file, create a column
+1.2 Pandas: Read a .csv file, use loc and iloc
+1.2 Pandas: Read a .csv file, filter by one column name
+1.2 Pandas: Read a .csv file, iterate through rows
+1.2 Pandas: Read a .csv file, convert the type of one column
+1.2 Pandas: Read a .csv file, make correlations between 3 columns
+1.2 Pandas: Read a .csv file, delete one column
+1.2 Pandas: Read a .csv file, fill the NA cells with one value
+1.2 Pandas: Read a .csv file, rename one column
+1.2 Pandas: Read a .csv file, view one particular cell
+1.2 Pandas: Read a .csv file, view particular rows
+1.2 Pandas: Read a .csv file, view 3 columns
+1.2 Pandas: Read a .csv file, view one single column 2 ways
+1.2 Pandas: Read a .csv file, print it's columns
+1.2 Pandas: Read a .csv file, print the mean/min/max/median/std
+1.2 Pandas: Read a .csv file, print it's tail, head and shape
+1.2 Pandas: Concatenate two dataframes
+1.2 Pandas: Merge two dataframes
+1.2 Pandas: Join two dataframes
+1.2 Pandas: Create a dataframe from a 1.3 Numpy array
+1.2 Pandas: Create a dataframe from a series
+1.2 Pandas: Create a dataframe from a dictionary
+1.2 Pandas: Create a dataframe from a list
+1.2 Pandas: Create a series from a list and change the indexing to a, b, c, d
+1.2 Pandas: Create a series from a list
+1.1 General: Open big files in chunks
+1.1 General: Sort 2 objects
+1.1 General: One liner generator
+1.1 General: Add two dictionaries
+1.1 General: Create __gt__ and __lt__  and __eq__ functions
+1.1 General: Create __add__ and __mul__ functions to make operations on objects
+1.1 General: Unpack 7 values but use only the 3 values from the middle
+1.1 General: Write prime numbers algorithm ( one liner ! )
+1.1 General: Print a number as 3e2
+1.1 General: Create a comprehensive dictionary
+1.1 General: Print the orders of A, F and z characters
+1.1 General: Create a comprehensive dictionary
+1.1 General: Write a number as binary, hexa, and octa
+1.1 General: Use RJust, Ljust
+1.1 General: Use time module to make a count down
+1.1 General: Do one thing two ways and time it
+1.1 General: Use pdb module to debug
+1.1 General: Make a string iterable
+1.1 General: Create a generator
+1.1 General: Create a decorator
+1.1 General: Run a UNITTEST
+1.1 General: Use __name__ __ main__ functions
+1.1 General: Use the next magic functions within a class: __str__, __len__, __del__
+1.1 General: Use polymorphism
+1.1 General: Use lambda
+1.1 General: Use filter
+1.1 General: Use map
+1.1 General: Create a function with args and kwargs
+1.1 General: Use zip function
+1.1 General: Use enumerate function
+1.1 General: Print with % (string and digit)
+1.1 General: Create a nice table
+1.1 General: Print 1____10 2___100 3__1000 4_10000
+1.1 General: Print (#, 8) as ___#________*
+1.1 General: Print (5, 5) as 0005 5.00000
+1.1 General: Print 'a','b','c' separated by #
+1.1 General: Round 234.214 as : 230.0 and 234.21
+1.1 General: Use super from classes
+1.1 General: Display all .txt files from one folder
+1.1 General: Create and and delete one folder
+1.1 General: Create 2 classes (inheritance)
+1.1 General: Getting an item from a dictionary without the program yelling at us if it doesn't exist
+1.1 General: Joining elements of a list with a special character
+1.1 General: Using argv
