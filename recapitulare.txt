@@ -116,7 +116,7 @@
 2. SQL: Create a foreign key ( 2 types on delete)
 2. SQL: Update some values inside a table
 2. SQL: Delete a row
-2. SQL: Copy a table
+2. SQL: Copy a table (2 ways)
 2. SQL: Use select, where and order by
 2. SQL: Select one new column as alias
 2. SQL: See how many unique values are inside a column
