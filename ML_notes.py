@@ -116,3 +116,65 @@ x1 = np.array([1, 2, 3])
 x2 = np.array([2, 1, 3])
 np.dot(x1, x2)
 np.inner(x1, x2)
+###################################################
+# Tensor Flow
+Hi level API: Keras
+mnist - is a dataset that contains a 28x28 pixels images of handwritten digits 0-9
+# importing TensorFlow
+import tensorflow as tf
+# Getting the data
+mnist = tf.keras.dataset.mnist
+# splitting the data into train and test
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+# Normalize the numbers (0-255)
+x_train = tf.keras.utils.normalize(x_train, axis=1)
+x_test = tf.keras.utils.normalize(x_test, axis=1)
+
+# Create the model ( there are 2 types of models, sequential is the most common one)
+model = tf.keras.models.Sequential()
+# Adding layers (we need to flatten the data) ;
+# Input layer
+model.add(tf.keras.layers.Flatten())
+# hidden layer : 128 neurons in the layer, the activation function ( what it's going to make the neuron fire)
+model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
+model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) # second hidden layer
+model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax)) # output layer
+
+# parameters for training the model ; the optimizer: the most complex part of the model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+# binary_categorical_crossentropy
+# metrics: what do we wanna track
+model.fit(x_train, y_train, epochs=3)
+
+# Calculate the validation loss and the validation accuracy
+val_loss, val_accuracy = model.evaluate(x_test, y_test)
+print(val_loss, val_accuracy)
+
+# Save the model
+model.save('my_model')
+# Import the model
+new_model = tf.keras.models.load_model('my_model')
+# Make a prediction: the output is an array if lots of results
+predictions = new_model.predict([x_test])
+# to see the result:
+import numpy as np
+print(np.argmax(predictions[0]))
+
+# see with matplotlib
+import matplotlib.pyplot as plt
+plt.imshow(x_test[0], cmap=plt.cm.binary)
+plt.show()
+
+# Convolutional NN
+# Load an outside dataset: cats and dogs
+import cv2 ( pip install opencv-python)
+IS AN ARTIFICIAL NEURON NETWORK USED FOR IMAGE ANALYSIS/DATA ANALYSIS/CLASSIFICATION PROBLEMS
+Adding layers:
+1.
+model = keras.model.Sequential([Dense(5, input_shape(3,), activation='relu')])
+2.
+model = keras.model.Sequential()
+model.add(Dense(5, input_shape(3,)))
+model.add(Activation('relu'))

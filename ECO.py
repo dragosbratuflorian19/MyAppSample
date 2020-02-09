@@ -7,7 +7,7 @@ cheltuieli = {
     'telefon': 35,
     'sala': 135,
     'tuns': 70,
-    'rata': 271,
+    'rata': 183,
     'metrou': 35,
     'extra': 100,
     'mancare': 750}
