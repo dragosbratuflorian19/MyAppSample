@@ -7,11 +7,12 @@ cheltuieli = {
     'intretinere': 70,
     'telefon': 35,
     'sala': 135,
-    'tuns': 70,
+    'tuns': 70*2,
     'rata': 183,
     'metrou': 35,
     'extra': 100,
-    'mancare': 750}
+    'proteine': 100,
+    'mancare': 750,}
 
 suma_cheltuieli = sum(cheltuieli.values())
 # Venituri lunare
@@ -19,7 +20,7 @@ income_10 = 2600 - suma_cheltuieli
 income_25 = 2000
 # Sold conturi
 BCR = 12000
-BRD = 1000 + 2565.4 - suma_cheltuieli
+ING = 1000 + 2565.4 - suma_cheltuieli
 crestere_dupa_1_an = 0
 for year in [2020, 2021]:
     luni_trecute = ['January', 'February']
@@ -28,12 +29,12 @@ for year in [2020, 2021]:
             continue
         else:
             BCR += income_25
-            BRD += income_10
+            ING += income_10
             print('_' * 40)
             print(f'Balance in 10th of {month}, {year}:')
             print(f'BCR balance: {BCR} RON or {round(BCR/4.6)}\u20ac')
-            print(f'BRD balance: {round(BRD)} RON or {round(BRD/4.6)}\u20ac')
-            print(f'Total balance: {round(BCR + BRD)} RON or {round((BRD + BCR)/4.6)}\u20ac')
+            print(f'BRD balance: {round(ING)} RON or {round(ING/4.6)}\u20ac')
+            print(f'Total balance: {round(BCR + ING)} RON or {round((ING + BCR)/4.6)}\u20ac')
     income_25 += crestere_dupa_1_an
 print('_' * 40)
 print(f'Salariu este: +{income_10 + income_25 + suma_cheltuieli} RON')
