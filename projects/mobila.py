@@ -33,7 +33,7 @@ for year in [2020, 2021]:
             print('_' * 40)
             print(f'Balance in 10th of {month}, {year}:')
             print(f'BCR balance: {BCR} RON or {round(BCR/4.6)}\u20ac')
-            print(f'BRD balance: {round(ING)} RON or {round(ING/4.6)}\u20ac')
+            print(f'ING balance: {round(ING)} RON or {round(ING/4.6)}\u20ac')
             print(f'Total balance: {round(BCR + ING)} RON or {round((ING + BCR)/4.6)}\u20ac')
     income_25 += crestere_dupa_1_an
 print('_' * 40)
